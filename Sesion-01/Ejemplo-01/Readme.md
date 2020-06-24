@@ -12,7 +12,7 @@
 
 1. Comenzar nuevo proyecto de React con el comando `npx create-react-app ejemplo1`.
 
-2. Seguir las [buenas prácticas para empezar un proyecto]().
+2. Seguir las [buenas prácticas para empezar un proyecto](../Readme.md).
 
 3. Crear nuestro `div` principal que nos servira como techo.
 ```
@@ -178,4 +178,40 @@ const Foco = () => {
 };
 
 export default Foco;
+```
+
+13. Como necesitamos que la luz este enmedio, hacemos que el foco use flexbox.
+```
+.foco {
+   width: 100px;
+   height: 100px;
+   background-color: white;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+}
+```
+
+14. Ahora vamos a agregarle color a la luz usando un nuevo CSS; creamos archivo `Luz.css` (src/css/Luz.css).
+```
+.luz {
+   width: 50px;
+   height: 50px;
+   background-color: orange;
+}
+```
+
+15. Importamos el CSS en el componente, lo usamos y eliminamos la palabra "luz". Ahora ya se conocen 2 maneras de usar css, por componente o global.
+```
+import React from 'react';
+import '../css/Luz.css';
+
+const Luz = () => {
+   return (
+      <div className="luz">
+      </div>
+   );
+};
+
+export default Luz;
 ```
