@@ -10,7 +10,7 @@
 
 #### DESARROLLO
 
-1- Comenzar nuevo proyecto de React con el comando `npx create-react-app ejemplo1`
+1. Comenzar nuevo proyecto de React con el comando `npx create-react-app ejemplo1`
 
-2-
+2. wefw3
 
