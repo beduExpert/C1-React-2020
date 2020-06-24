@@ -1,5 +1,3 @@
-[`C1-React`](../../Readme.md) > [`Sesión 01`](../Readme.md) > Ejemplo 01
-
 ## Techo Azul
 
 ### OBJETIVO 
