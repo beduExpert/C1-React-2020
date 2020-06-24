@@ -1,4 +1,4 @@
-## Techo Azul
+## Techo del cielo
 
 ### OBJETIVO 
 - Comenzar proyectos con buenas prácticas.
