@@ -215,3 +215,6 @@ const Luz = () => {
 
 export default Luz;
 ```
+
+16. Resultado
+[](./public/resultado.png)
