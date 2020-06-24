@@ -217,4 +217,4 @@ export default Luz;
 ```
 
 16. Resultado
-<img src="./public/resultado.png" width="600">
+<img src="./public/resultado.png" width="400">
