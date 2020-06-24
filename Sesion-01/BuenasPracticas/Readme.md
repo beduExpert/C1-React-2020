@@ -61,7 +61,7 @@ const App = () => {
 export default App;
 ```
 
-12. Abrimos la terminal para comenzar nuestra aplicación con `npm start`, debemos de ver lo siguiente:
+12. Abrimos la terminal para comenzar nuestra aplicación con `npm start`, se abrirá el navegador y debemos de ver lo siguiente:
 <img src="./8.png" width="400">
 
 13. Seguir estos pasos no es obligatorio, pero es recomendado para ordenar el proyecto desde el principio.
