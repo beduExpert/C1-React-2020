@@ -19,3 +19,4 @@
 4. Crear el CSS para los componentes en dado caso que sea necesario; puede ser global o por componente.
 
 5. Conectar los componentes de tal modo que nos quede este resultado:
+<img src="./public/resultado.png" width="400">
