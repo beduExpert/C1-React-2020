@@ -1,4 +1,4 @@
- ## Nombre del Ejemplo: Techo Azul
+ ## Techo Azul
 
 ### OBJETIVO 
 - Comenzar proyectos con buenas prácticas.
