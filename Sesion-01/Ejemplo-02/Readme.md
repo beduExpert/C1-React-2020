@@ -10,130 +10,11 @@
 
 #### DESARROLLO
 
-1. Comenzar nuevo proyecto de React con el comando `npx create-react-app ejemplo1`.
+1. Abrir nuestro proyecto "Techo del cielo" del ejemplo 1.
 
-2. Seguir las [buenas prácticas para empezar un proyecto](../BuenasPracticas/Readme.md).
+2. En este momento tenemos una única fila de 2 focos, ahora vamos a agregarle 2 filas más para terminar con 3 filas en total.
 
-3. Crear nuestro `div` principal que nos servira como techo.
-```
-import React from 'react';
-
-function App() {
-   return (
-      <div id="techo">
-         techo
-      </div>
-   );
-}
-
-export default App;
-```
-
-4. Ir a `index.css` para crear el CSS de nuestro techo.
-```
-#techo {
-   width: 600px;
-   height: 600px;
-   background-color: skyblue;
-}
-```
-
-5. Crear otro `div` hijo que nos servirá como foco. Notar primer diferencia en como usamos las clases de CSS.
-```
-import React from 'react';
-
-function App() {
-   return (
-      <div id="techo">
-         techo
-         <div className="foco">
-            foco
-         </div>
-      </div>
-   );
-}
-
-export default App;
-``` 
-
-6. Ir a `index.css` para crear el CSS de nuestros focos.
-```
-.foco {
-   width: 100px;
-   height: 100px;
-   background-color: white;
-}
-```
-
-7. Como queremos 2 focos, vamos a copiar y pegar el `div` del foco.
-```
-import React from 'react';
-
-function App() {
-   return (
-      <div id="techo">
-         techo
-         <div className="foco">
-            foco
-         </div>
-         <div className="foco">
-            foco
-         </div>
-      </div>
-   );
-}
-
-export default App;
-```
-
-8. Queremos los focos ordenados en fila, lo arreglamos con flexbox.
-```
-#techo {
-   width: 600px;
-   height: 600px;
-   background-color: skyblue;
-   display: flex;
-   align-items: center;
-   justify-content: space-around;
-}
-```
-
-9. Eliminamos la palabra "techo" que nos estorba.
-```
-import React from 'react';
-
-function App() {
-   return (
-      <div id="techo">
-         <div className="foco">
-            foco
-         </div>
-         <div className="foco">
-            foco
-         </div>
-      </div>
-   );
-}
-
-export default App;
-```
-
-10. Estamos repitiendo exactamente el mismo código del foco; creamos nuevo componente dentro de la carpeta `components` como `Foco.js`.
-```
-import React from 'react';
-
-const Foco = () => {
-   return (
-      <div className="foco">
-         foco
-      </div>
-   );
-};
-
-export default Foco;
-```
-
-11. Importamos el componente en `App.js` y lo usamos. Hay que notar que podemos usar componentes en 1 sola linea.
+3. La primera idea que se nos puede ocurrir es agregar otro foco mercurial y añadirlo a la lista, vamos a intentarlo con `<Foco />` y ver como queda.
 ```
 import React from 'react';
 import Foco from './Foco';
@@ -143,6 +24,7 @@ function App() {
       <div id="techo">
          <Foco />
          <Foco />
+         <Foco />
       </div>
    );
 }
@@ -150,71 +32,163 @@ function App() {
 export default App;
 ```
 
-12. Ahora nuestro foco necesita de una luz; creamos el componente, lo usamos y quitamos la palabra "foco".
+4. Si nos damos cuenta esta no es la manera de hacerlo porque esta agregando otro `<Foco />` a la fila actual.
+
+
+5. Vamos a separarlos por fila creando un nuevo componente llamado `FilaFocos.js`.
 ```
 import React from 'react';
 
-const Luz = () => {
+const FilaFocos = () => {
    return (
-      <div>
-         luz
+      <div className="filaFocos">
+         FilaFocos
       </div>
    );
 };
 
-export default Luz;
-```
+export default FilaFocos;
+``` 
 
+6. Tomar la decisión de usar CSS por componente o global y añadir el siguiente CSS.
 ```
-import React from 'react';
-import Luz from './Luz';
-
-const Foco = () => {
-   return (
-      <div className="foco">
-         <Luz />
-      </div>
-   );
-};
-
-export default Foco;
-```
-
-13. Como necesitamos que la luz este enmedio, hacemos que el foco use flexbox.
-```
-.foco {
-   width: 100px;
-   height: 100px;
-   background-color: white;
+.filaFocos {
    display: flex;
    align-items: center;
    justify-content: space-around;
 }
 ```
 
-14. Ahora vamos a agregarle color a la luz usando un nuevo CSS; creamos archivo `Luz.css` (src/css/Luz.css).
+7. Importar y usar el nuevo componente de la fila.
 ```
-.luz {
-   width: 50px;
+import React from 'react';
+import Foco from './Foco';
+import FilaFocos from './FilaFocos';
+
+function App() {
+   return (
+      <div id="techo">
+         <FilaFocos />
+         <Foco />
+         <Foco />
+      </div>
+   );
+}
+
+export default App;
+```
+
+8. Si nos damos cuenta, quedo igual de mal que al principio jeje. Lo que necesitamos es que los componentes se vean en forma de columna y no de fila, por lo que pasamos a arreglar el techo con `flex-direction`.
+```
+#techo {
+   width: 600px;
+   height: 600px;
+   background-color: skyblue;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   flex-direction: column;
+}
+```
+
+9. Ahora vamos a hacer que nuestra `<FilaFocos />` muestre 2 `<Foco />`.
+```
+import React from 'react';
+import Foco from './Foco';
+
+const FilaFocos = () => {
+   return (
+      <div className="filaFocos">
+         <Foco />
+         <Foco />
+      </div>
+   );
+};
+
+export default FilaFocos;
+```
+
+10. Ya casi, el problema ahora es que nuestra `<FilaFocos />` no tiene su propio `width` ya que este depende de la longitud de sus hijos, demosle una en el CSS.
+```
+.filaFocos {
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   width: 80%;
+}
+```
+
+11. Felicidades! Ya creamos nuestra fila de focos normales, vamos a empezar a hacer nuestro foco mercurial.
+
+12. Creamos nuevo componente `<FocoMercurial />`.
+```
+import React from 'react';
+
+const FocoMercurial = () => {
+   return (
+      <div className="focoMercurial">
+         FocoMercurial
+      </div>
+   );
+};
+
+export default FocoMercurial;
+```
+
+13. Le damos su CSS para que no se ponga celoso.
+```
+.focoMercurial {
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   width: 80%;
+   height: 100px;
+   background-color: white;
+}
+```
+
+14. Lo importamos y usamos en `<App.js />`.
+```
+import React from 'react';
+import FilaFocos from './FilaFocos';
+import FocoMercurial from './FocoMercurial';
+
+function App() {
+   return (
+      <div id="techo">
+         <FocoMercurial />
+         <FilaFocos />
+         <FocoMercurial />
+      </div>
+   );
+}
+
+export default App;
+```
+
+15. Continuamos y creamos la `<LuzMercurial />`.
+```
+import React from 'react';
+
+const LuzMercurial = () => {
+   return (
+      <div className="luzMercurial" />
+   );
+};
+
+export default LuzMercurial;
+```
+
+16. Creamos su CSS.
+```
+.luzMercurial {
+   width: 80%;
    height: 50px;
    background-color: orange;
 }
 ```
 
-15. Importamos el CSS en el componente, lo usamos y eliminamos la palabra "luz". Ahora ya se conocen 2 maneras de usar css, por componente o global.
-```
-import React from 'react';
-import '../css/Luz.css';
+17. Importamos el componente y lo usamos en `<FocoMercurial />`.
 
-const Luz = () => {
-   return (
-      <div className="luz">
-      </div>
-   );
-};
-
-export default Luz;
-```
-
-16. Resultado
+18. Resultado
 <img src="./public/resultado.png" width="400">
