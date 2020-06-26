@@ -10,7 +10,7 @@
 
 #### DESARROLLO
 
-1. Abrir nuestro proyecto "Techo del cielo" del ejemplo 1.
+1. Abrir nuestro proyecto "Techo del cielo" del [Ejemplo-01](../Ejemplo-01).
 
 2. En este momento tenemos una única fila de 2 focos, ahora vamos a agregarle 2 filas más para terminar con 3 filas en total.
 
@@ -120,7 +120,7 @@ export default FilaFocos;
 
 11. Felicidades! Ya creamos nuestra fila de focos normales, vamos a empezar a hacer nuestro foco mercurial.
 
-12. Creamos nuevo componente `<FocoMercurial />`.
+12. Creamos nuevo componente `FocoMercurial.js`.
 ```
 import React from 'react';
 
@@ -147,7 +147,7 @@ export default FocoMercurial;
 }
 ```
 
-14. Lo importamos y usamos en `<App.js />`.
+14. Lo importamos y usamos en `App.js`.
 ```
 import React from 'react';
 import FilaFocos from './FilaFocos';
@@ -166,7 +166,7 @@ function App() {
 export default App;
 ```
 
-15. Continuamos y creamos la `<LuzMercurial />`.
+15. Continuamos y creamos la `LuzMercurial.js`.
 ```
 import React from 'react';
 
@@ -188,7 +188,7 @@ export default LuzMercurial;
 }
 ```
 
-17. Importamos el componente y lo usamos en `<FocoMercurial />`.
+17. Importamos el componente y lo usamos en `FocoMercurial.js`.
 
 18. Resultado
 <img src="./public/resultado.png" width="400">
