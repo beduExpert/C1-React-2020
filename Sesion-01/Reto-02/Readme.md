@@ -19,4 +19,4 @@
 4. Conectar los componentes de tal modo que nos quede este resultado:
 <img src="./public/resultado.png" width="400">
 
-5. Esperar a ver que tia se llevó el centro de mesa.
+5. Esperar a ver que tía se llevó el centro de mesa.
