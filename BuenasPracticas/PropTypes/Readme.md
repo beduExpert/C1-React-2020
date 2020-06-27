@@ -10,21 +10,21 @@ import PropTypes from 'prop-types';
 3. Estas son las formas más comunes de validar:
 ```
 ComponenteEjemplo.propTypes = {
-	funcion: PropTypes.func,
+   funcion: PropTypes.func,
 
-	booleano: PropTypes.bool,
+   booleano: PropTypes.bool,
 
-	textoOpcional: PropTypes.string,
-	textoRequerido: PropTypes.string.isRequired,
+   textoOpcional: PropTypes.string,
+   textoRequerido: PropTypes.string.isRequired,
 
-	numeroOpcional: PropTypes.number,
-	numeroRequerido: PropTypes.number.isRequired,
+   numeroOpcional: PropTypes.number,
+   numeroRequerido: PropTypes.number.isRequired,
 
-	arreglo : PropTypes.array,
-	objeto: PropTypes.shape({
-		atributo1: PropTypes.string,
-		atributo2: PropTypes.bool.isRequired
-	})
+   arreglo : PropTypes.array,
+   objeto: PropTypes.shape({
+      atributo1: PropTypes.string,
+      atributo2: PropTypes.bool.isRequired
+   })
 }
 ```
 
@@ -39,27 +39,27 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const ComponenteEjemplo = (props) => {
-	return (
-		<div />
-	);
+   return (
+      <div />
+   );
 };
 
 ComponenteEjemplo.propTypes = {
-	funcion: PropTypes.func,
+   funcion: PropTypes.func,
 
-	booleano: PropTypes.bool,
+   booleano: PropTypes.bool,
 
-	textoOpcional: PropTypes.string,
-	textoRequerido: PropTypes.string.isRequired,
+   textoOpcional: PropTypes.string,
+   textoRequerido: PropTypes.string.isRequired,
 
-	numeroOpcional: PropTypes.number,
-	numeroRequerido: PropTypes.number.isRequired,
+   numeroOpcional: PropTypes.number,
+   numeroRequerido: PropTypes.number.isRequired,
 
-	arreglo : PropTypes.array,
-	objeto: PropTypes.shape({
-		atributo1: PropTypes.string,
-		atributo2: PropTypes.bool.isRequired
-	})
+   arreglo : PropTypes.array,
+   objeto: PropTypes.shape({
+      atributo1: PropTypes.string,
+      atributo2: PropTypes.bool.isRequired
+   })
 }
 
 export default ComponenteEjemplo;
@@ -71,16 +71,16 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const ComponenteEjemplo = (props) => {
-	return (
-		<div onClick={props.funcion}>
-			{props.textoRequerido}
-		</div>
-	);
+   return (
+      <div onClick={props.funcion}>
+         {props.textoRequerido}
+      </div>
+   );
 };
 
 ComponenteEjemplo.propTypes = {
-	funcion: PropTypes.func.isRequired,
-	textoRequerido: PropTypes.string.isRequired
+   funcion: PropTypes.func.isRequired,
+   textoRequerido: PropTypes.string.isRequired
 }
 
 export default ComponenteEjemplo;
