@@ -89,7 +89,7 @@ class LuzMercurial extends React.Component {
 export default LuzMercurial;
 ```
 
-9. Hasta este punto la luz es controlada por `FocoMercurial.js` o por `LuzMercurial.js`. Se recomienda que las propiedades sean pasadas 1 solo nivel abajo (exactamente como lo tenemos), porque después se hace mucho enredadero para saber de donde es originalmente un parámetro.
+9. Hasta este punto la luz es controlada por `FocoMercurial.js` o por `LuzMercurial.js`. Se recomienda que las propiedades sean pasadas solamente 1 nivel abajo (exactamente como lo tenemos), porque después se hace mucho enredadero para saber de dónde es originalmente un parámetro.
 
 10. PEEEEEEEERO; como estamos aprendiendo, nos vamos a pasar esa sugerencia por la cabeza solo esta vez, de oreja a oreja para que se nos grabe en el cerebro.
 
@@ -132,7 +132,7 @@ function App() {
 export default App;
 ```
 
-15. Que bonito verdad? Y para que no se nos olvide, vamos a agregar un `<FocoMercurial />` más, pero sin color, para que agarre el color original (rosa).
+15. Que bonito verdad? Y para que no se nos olvide, vamos a agregar un `<FocoMercurial />` más; pero sin color, para que agarre el color original (rosa).
 ```
 import React from 'react';
 import FilaFocos from './FilaFocos';
