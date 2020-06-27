@@ -14,3 +14,5 @@
 - Declaración y utilización de estado (state).
 - Declaración y utilización de propiedades (props) en los 2 tipos de componente
 - Buenas prácticas de propiedades (libreria PropTypes).
+
+### [Buenas prácticas para las propiedades (props)](../BuenasPracticas/PropTypes/Readme.md).

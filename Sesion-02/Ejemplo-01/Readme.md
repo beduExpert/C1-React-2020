@@ -6,207 +6,22 @@
 - Conocer 2 maneras de usar CSS con React.
 
 #### REQUISITOS
-- Haber entendido la [Sesion-01](../../Sesion-01) de preferencia.
+- Haber completado el [Ejemplo-02](../../Sesion-01/Ejemplo-02) de la Sesion-01.
 
 #### DESARROLLO
 
-1. Comenzar nuevo proyecto de React con el comando `npx create-react-app ejemplo1`.
+1. Abrir nuestro proyecto "Luz Mercurial" del [Ejemplo-02](../../Sesion-01/Ejemplo-02) de la Sesion-01.
 
-2. Seguir las [buenas prácticas para empezar un proyecto](../BuenasPracticas/Readme.md).
+2. Ya tenemos nuestros focos con luces naranjas, lo que vamos a hacer es definir el color de las luces con el estado de React.
 
-3. Crear nuestro `div` principal que nos servira como techo.
-```
-import React from 'react';
+3. Abrimos nuestro archivo `Luz.js` y como primer paso tenemos que cambiar el tipo de componente a que sea stateful (componente clase).
 
-function App() {
-   return (
-      <div id="techo">
-         techo
-      </div>
-   );
-}
-
-export default App;
-```
-
-4. Ir a `index.css` para crear el CSS de nuestro techo.
-```
-#techo {
-   width: 600px;
-   height: 600px;
-   background-color: skyblue;
-}
-```
-
-5. Crear otro `div` hijo que nos servirá como foco. Notar primer diferencia en como usamos las clases de CSS.
-```
-import React from 'react';
-
-function App() {
-   return (
-      <div id="techo">
-         techo
-         <div className="foco">
-            foco
-         </div>
-      </div>
-   );
-}
-
-export default App;
-``` 
-
-6. Ir a `index.css` para crear el CSS de nuestros focos.
-```
-.foco {
-   width: 100px;
-   height: 100px;
-   background-color: white;
-}
-```
-
-7. Como queremos 2 focos, vamos a copiar y pegar el `div` del foco.
-```
-import React from 'react';
-
-function App() {
-   return (
-      <div id="techo">
-         techo
-         <div className="foco">
-            foco
-         </div>
-         <div className="foco">
-            foco
-         </div>
-      </div>
-   );
-}
-
-export default App;
-```
-
-8. Queremos los focos ordenados en fila, lo arreglamos con flexbox.
-```
-#techo {
-   width: 600px;
-   height: 600px;
-   background-color: skyblue;
-   display: flex;
-   align-items: center;
-   justify-content: space-around;
-}
-```
-
-9. Eliminamos la palabra "techo" que nos estorba.
-```
-import React from 'react';
-
-function App() {
-   return (
-      <div id="techo">
-         <div className="foco">
-            foco
-         </div>
-         <div className="foco">
-            foco
-         </div>
-      </div>
-   );
-}
-
-export default App;
-```
-
-10. Estamos repitiendo exactamente el mismo código del foco; creamos nuevo componente dentro de la carpeta `components` como `Foco.js`.
-```
-import React from 'react';
-
-const Foco = () => {
-   return (
-      <div className="foco">
-         foco
-      </div>
-   );
-};
-
-export default Foco;
-```
-
-11. Importamos el componente en `App.js` y lo usamos. Hay que notar que podemos usar componentes en 1 sola linea.
-```
-import React from 'react';
-import Foco from './Foco';
-
-function App() {
-   return (
-      <div id="techo">
-         <Foco />
-         <Foco />
-      </div>
-   );
-}
-
-export default App;
-```
-
-12. Ahora nuestro foco necesita de una luz; creamos el componente, lo usamos y quitamos la palabra "foco".
-```
-import React from 'react';
-
-const Luz = () => {
-   return (
-      <div>
-         luz
-      </div>
-   );
-};
-
-export default Luz;
-```
-
-```
-import React from 'react';
-import Luz from './Luz';
-
-const Foco = () => {
-   return (
-      <div className="foco">
-         <Luz />
-      </div>
-   );
-};
-
-export default Foco;
-```
-
-13. Como necesitamos que la luz este enmedio, hacemos que el foco use flexbox.
-```
-.foco {
-   width: 100px;
-   height: 100px;
-   background-color: white;
-   display: flex;
-   align-items: center;
-   justify-content: space-around;
-}
-```
-
-14. Ahora vamos a agregarle color a la luz usando un nuevo CSS; creamos archivo `Luz.css` (src/css/Luz.css).
-```
-.luz {
-   width: 50px;
-   height: 50px;
-   background-color: orange;
-}
-```
-
-15. Importamos el CSS en el componente, lo usamos y eliminamos la palabra "luz". Ahora ya se conocen 2 maneras de usar css, por componente o global.
+4. Cambiamos la linea de declaración de esto: `const Luz = () => {` a esto `class Luz extends React.Component {`; no va a funcionar porque todavia no terminamos.
 ```
 import React from 'react';
 import '../css/Luz.css';
 
-const Luz = () => {
+class Luz extends React.Component {
    return (
       <div className="luz">
       </div>
@@ -216,5 +31,97 @@ const Luz = () => {
 export default Luz;
 ```
 
-16. Resultado
+5. Ahora vamos a añadir el `render()`, esto es lo que falta alrededor del `return`; con esto, nuestra applicación vuelve a funcionar.
+```
+import React from 'react';
+import '../css/Luz.css';
+
+class Luz extends React.Component {
+   render() {
+      return (
+         <div className="luz">
+         </div>
+      );
+   }
+};
+
+export default Luz;
+``` 
+
+6. Vamos a declarar nuestro estado del componente añadiendo el `constructor`.
+```
+import React from 'react';
+import '../css/Luz.css';
+
+class Luz extends React.Component {
+   constructor(props) {
+      super(props);
+      this.state = {
+         color: 'pink'
+      };
+   }
+
+   render() {
+      return (
+         <div className="luz">
+         </div>
+      );
+   }
+};
+
+export default Luz;
+```
+
+7. Vamos a sobreescribir el CSS del componente, poniendole el color directamente en la etiqueta JSX.
+```
+import React from 'react';
+import '../css/Luz.css';
+
+class Luz extends React.Component {
+   constructor(props) {
+      super(props);
+      this.state = {
+         color: 'pink'
+      };
+   }
+
+   render() {
+      return (
+         <div style={{ backgroundColor: this.state.color }} className="luz">
+         </div>
+      );
+   }
+};
+
+export default Luz;
+```
+
+8. Cuando vemos el resultado nos da alegría de saber que es casi tan hermoso como nosotros (paso obligatorio).
+
+9. Vamos a hacer lo mismo con `LuzMercurial.js`; convertirlo en componente stateful (clase), agregar el estado (state) con algún color y sobreescribirlo.
+```
+import React from 'react';
+
+class LuzMercurial extends React.Component {
+   constructor(props) {
+      super(props);
+      this.state = {
+         color: 'pink'
+      };
+   }
+
+   render() {
+      return (
+         <div
+            className="luzMercurial"
+            style={{ backgroundColor: this.state.color }}
+         />
+      );
+   }
+};
+
+export default LuzMercurial;
+```
+
+10. Resultado
 <img src="./public/resultado.png" width="400">
