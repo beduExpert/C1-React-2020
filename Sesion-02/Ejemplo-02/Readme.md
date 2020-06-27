@@ -62,7 +62,7 @@ export default LuzMercurial;
 <img src="./public/consola.png" width="300">
 
 7. [Aquí](https://es.reactjs.org/docs/strict-mode.html#detecting-unexpected-side-effects) nos explican exactamente porque.
-<img src="./public/explicacion.png" width="400">
+<img src="./public/explicacion.png" width="800">
 
 8. Vamos a borrar el `console.log()` y decirle a la luz que obedesca primero a lo que le mandan; y si no, que use su propio estado.
 ```
