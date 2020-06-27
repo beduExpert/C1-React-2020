@@ -6,7 +6,7 @@
 - Conocer 2 maneras de usar CSS con React.
 
 #### REQUISITOS
-- Haber entendido la [Sesion-01](../../Sesion-01)
+- Haber entendido la [Sesion-01](../../Sesion-01) de preferencia.
 
 #### DESARROLLO
 

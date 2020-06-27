@@ -12,7 +12,7 @@
 
 1. Comenzar nuevo proyecto de React con el comando `npx create-react-app ejemplo1`.
 
-2. Seguir las [buenas prácticas para empezar un proyecto](../BuenasPracticas/Readme.md).
+2. Seguir las [buenas prácticas para empezar un proyecto](../../BuenasPracticas/EmpezandoProyectos/Readme.md).
 
 3. Crear nuestro `div` principal que nos servira como techo.
 ```
