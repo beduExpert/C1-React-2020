@@ -1,9 +1,9 @@
 ## Techo del cielo
 
 ### OBJETIVO 
-- Comenzar proyectos con buenas prácticas.
-- Diferenciar HTML y JSX.
-- Conocer 2 maneras de usar CSS con React.
+- Usar componente stateful (clase).
+- Convertir de stateless (funcional) a stateful (clase).
+- Cómo declarar y usar el estado en componente stateful.
 
 #### REQUISITOS
 - Haber completado el [Ejemplo-02](../../Sesion-01/Ejemplo-02) de la Sesion-01.
