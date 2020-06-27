@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import LuzMercurial from './LuzMercurial';
 
 const FocoMercurial = (props) => {
@@ -8,5 +9,9 @@ const FocoMercurial = (props) => {
 		</div>
 	);
 };
+
+FocoMercurial.propTypes = {
+	color: PropTypes.string,
+}
 
 export default FocoMercurial;

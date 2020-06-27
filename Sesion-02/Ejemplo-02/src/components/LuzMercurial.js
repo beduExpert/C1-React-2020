@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 class LuzMercurial extends React.Component {
 	constructor(props) {
@@ -17,5 +18,9 @@ class LuzMercurial extends React.Component {
 		);
 	}
 };
+
+LuzMercurial.propTypes = {
+	color: PropTypes.string,
+}
 
 export default LuzMercurial;

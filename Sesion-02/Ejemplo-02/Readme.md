@@ -156,5 +156,58 @@ export default App;
    - En los componentes stateless (funcionales) se tiene que recibir el parámetro a la hora de declarar y se usa solo como `props.nombrePropiedad`.
    - En los componentes stateful (clase) se tiene que referir en el `constructor` y se usa como `this.props.nombrePropiedad`.
 
-18. Resultado
+17. Como paso final vamos a seguir las [buenas prácticas para propiedades (props)](../../BuenasPracticas/PropTypes/Readme.md) con los componentes `FocoMercurial.js` y `LuzMercurial.js`.
+
+18. `FocoMercurial.js` nos va a quedar así:
+```
+import React from 'react';
+import PropTypes from 'prop-types';
+import LuzMercurial from './LuzMercurial';
+
+const FocoMercurial = (props) => {
+   return (
+      <div className="focoMercurial">
+         <LuzMercurial color={props.color} />
+      </div>
+   );
+};
+
+FocoMercurial.propTypes = {
+   color: PropTypes.string,
+}
+
+export default FocoMercurial;
+```
+
+19. `LuzMercurial.js` nos va a quedar así:
+```
+import React from 'react';
+import PropTypes from 'prop-types';
+
+class LuzMercurial extends React.Component {
+   constructor(props) {
+      super(props);
+      this.state = {
+         color: 'pink'
+      };
+   }
+
+   render() {
+      return (
+         <div
+            className="luzMercurial"
+            style={{ backgroundColor: this.props.color || this.state.color }}
+         />
+      );
+   }
+};
+
+LuzMercurial.propTypes = {
+   color: PropTypes.string,
+}
+
+export default LuzMercurial;
+```
+
+20. Resultado:
 <img src="./public/resultado.png" width="400">
