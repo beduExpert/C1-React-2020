@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Plato from './Plato';
 import Cubierto from './Cubierto';
 
@@ -27,5 +28,10 @@ class Mantel extends React.Component {
 		);
 	}
 };
+
+Mantel.propTypes = {
+	height: PropTypes.number,
+	backgroundColor: PropTypes.string
+}
 
 export default Mantel;

@@ -15,5 +15,7 @@
 
 2. Modificar el código necesario para que nuestros manteles acepten parámetros de `backgroundColor` y `height` y usarlos como prioridad.
 
-3. Resultado:
+3. No olvides seguir las [buenas prácticas para las propiedades (props)](../../BuenasPracticas/PropTypes/Readme.md).
+
+4. Resultado:
 <img src="./public/resultado.png" width="400">
