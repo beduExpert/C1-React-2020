@@ -5,6 +5,6 @@
 
 #### DESARROLLO
 
-1. Leer la seccion de ["React solo actualiza lo que es necesario"](https://es.reactjs.org/).
+1. Leer la seccion de ["React solo actualiza lo que es necesario"](https://es.reactjs.org/docs/rendering-elements.html#react-only-updates-whats-necessary).
 
 2. Leer el artículo de ["Componentes y propiedades"](https://es.reactjs.org/docs/components-and-props.html).
