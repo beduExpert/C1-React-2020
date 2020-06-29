@@ -15,5 +15,4 @@
 - Insertando CSS por componente
 - Reutilización de componentes
 
-
-### [Buenas prácticas para empezar un proyecto](./BuenasPracticas/Readme.md).
+### [Buenas prácticas para empezar un proyecto](../BuenasPracticas/EmpezandoProyectos/Readme.md).

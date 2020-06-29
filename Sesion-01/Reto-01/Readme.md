@@ -12,7 +12,7 @@
 
 1. Comenzar un nuevo proyecto con `npx create-react-app reto1`.
 
-2. Seguir las [buenas prácticas para empezar un proyecto](../BuenasPracticas/Readme.md).
+2. Seguir las [buenas prácticas para empezar un proyecto](../../BuenasPracticas/EmpezandoProyectos/Readme.md).
 
 3. Crear los componentes `Mesa`, `Mantel`, `Plato` y `Cubierto`.
 
