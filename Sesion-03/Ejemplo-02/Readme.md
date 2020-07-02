@@ -1,4 +1,4 @@
-## Incremento
+## Complejidad, bienvenida
 
 ### OBJETIVO
 - Modificar el estado.
@@ -167,7 +167,7 @@ render() {
 ))}
 ```
 
-13. Ya que estamos imprimiendo los nombres, vamos a agregar más nombres con un boton.
+13. Ya que estamos imprimiendo los nombres, vamos a agregar más nombres con un botón.
 ```
 import React from 'react';
 
@@ -228,7 +228,131 @@ class App extends React.Component {
 export default App;
 ```
 
-14. Cada que le demos click al `<Boton />`, el contador sumará 1.
+14. Nuestra función `handleClick()` se divide en 3 partes:
+   - Validar si el nombre existe (que no este vacio).
+   - Añadir el nombre a la lista de nombres.
+   - Actualizar el estado (añadir nombre a la lista y limpiar el nombre).
+
+15. Ahora podemos agregar nombres escribiendo en el campo de texto y picandole al botón.
+
+16. Vamos a crear un nuevo componente llamado `Nombre.js` que reciba el parámetro de `nombre`; no olvides seguir las [buenas prácticas para las propiedades (props)](../../BuenasPracticas/PropTypes/Readme.md).
+```
+import React from 'react';
+import PropTypes from 'prop-types';
+
+const Nombre = (props) => {
+   return (
+      <div>
+         {props.nombre}
+      </div>
+   );
+};
+
+Nombre.propTypes = {
+   nombre: PropTypes.string.isRequired
+}
+
+export default Nombre;
+```
+
+17. Lo importamos y lo usamos en `App.js`.
+```
+import Nombre from './Nombre';
+...
+{this.state.listaNombres.map((nmbr, key) => (
+   <li key={key}>
+      <Nombre nombre={nmbr} />
+   </li>
+))}
+...
+```
+
+18. Como vamos a usar el ciclo de vida en `Nombre.js`, necesitamos convertirlo en componente stateful (clase).
+```
+import React from 'react';
+import PropTypes from 'prop-types';
+
+class Nombre extends React.Component {
+   render() {
+      return (
+         <div>
+            {this.props.nombre}
+         </div>
+      );
+   }
+};
+
+Nombre.propTypes = {
+   nombre: PropTypes.string.isRequired
+}
+
+export default Nombre;
+```
+
+19. Vamos a agregarle el ciclo de vida más común, `componentDidMount` (cuando se inicializa).
+```
+import React from 'react';
+import PropTypes from 'prop-types';
+
+class Nombre extends React.Component {
+   componentDidMount() {
+      alert('Te damos la bienvenida ' + this.props.nombre);
+   }
+
+   render() {
+      return (
+         <div>
+            {this.props.nombre}
+         </div>
+      );
+   }
+};
+
+Nombre.propTypes = {
+   nombre: PropTypes.string.isRequired
+}
+
+export default Nombre;
+```
+
+20. Si nos fijamos bien, cada que un nombre es agregado a la lista, una alerta nos aparece dándole la bienvenida a la lista. Lo que `componentDidMount` hace, es que ejecuta esa función cuando el componente se montó en el virtual DOM y esta listo para ser desplegado en pantalla. Se ejecuta una vez el componente este correcto y listo para verse.
+
+21. Para poder ver el siguiente ciclo de vida, agreguemos un botón para eliminar nombres.
+```
+render() {
+   return (
+      <div>
+         {this.props.nombre}
+         <button>
+            X
+         </button>
+      </div>
+   );
+}
+```
+
+22. Hacemos la lógica para eliminar ese nombre de la lista y se lo pasamos a `Nombre.js`.
+```
+...
+borrarNombreDeLista = (key) => {
+   const copiaDeLista = this.state.listaNombres;
+   copiaDeLista.splice(key, 1);
+
+   this.setState({
+      listaNombres: copiaDeLista
+   });
+};
+...
+{this.state.listaNombres.map((nmbr, key) => (
+   <li key={key}>
+      <Nombre
+         nombre={nmbr}
+         borrarNombreDeLista={() => this.borrarNombreDeLista(key)}
+      />
+   </li>
+))}
+...
+```
 
 15. Resultado:
 <img src="./public/resultado.png" width="400">
