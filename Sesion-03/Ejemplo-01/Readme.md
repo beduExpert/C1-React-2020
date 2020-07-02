@@ -1,6 +1,6 @@
 ## Incremento
 
-### OBJETIVO 
+### OBJETIVO
 - Modificar el estado.
 - Modificar estado del padre por medio de funciones mandadas como props.
 
