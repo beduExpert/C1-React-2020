@@ -1,11 +1,18 @@
- ## Nombre del Reto: 
+## Incremento y decremento
 
-### OBJETIVO 
-
+### OBJETIVO
+- Modificar el estado.
+- Modificar estado del padre por medio de funciones mandadas como props.
 
 #### REQUISITOS 
-
+- Tener Node instalado.
+- Completar el [Ejemplo-01](../Ejemplo-01)
 
 #### DESARROLLO
 
+1. Abrir nuestro proyecto "Incremento" del [Ejemplo-01](../Ejemplo-01).
 
+2. Debemos de tener 2 botones, uno para sumar y otro para restar.
+
+3. Resultado:
+<img src="./public/resultado.png" width="400">
