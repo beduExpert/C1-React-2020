@@ -392,6 +392,7 @@ export default Nombre;
 
 25. El siguiente ciclo de vida se ejecuta cada que algún estado cambia, el `componentDidUpdate`. Se lo agregamos a `App.js` debajo del constructor.
 ```
+...
 constructor(props) {
    super(props);
    this.state = {
@@ -408,7 +409,40 @@ componentDidUpdate(prevProps, prevState) {
       })
    }
 };
+...
 ```
 
-26. Resultado:
+26. Agregamos el mensaje arriba del campo de texto y terminamos.
+```
+...
+render() {
+   return (
+      <div className="margen">
+         {this.state.mensaje}
+         <br />
+         <input
+            value={this.state.nombre}
+            onChange={this.handleInputChange}
+         />
+         <button onClick={this.handleClick}>
+            Agregar
+         </button>
+
+         <ul>
+            {this.state.listaNombres.map((nmbr, key) => (
+               <li key={key}>
+                  <Nombre
+                     nombre={nmbr}
+                     borrarNombreDeLista={() => this.borrarNombreDeLista(key)}
+                  />
+               </li>
+            ))}
+         </ul>
+      </div>
+   );
+}
+...
+```
+
+27. Resultado:
 <img src="./public/resultado.gif">
