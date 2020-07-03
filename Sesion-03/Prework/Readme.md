@@ -6,7 +6,7 @@
 
 #### DESARROLLO
 
-1. Leer el artículo ["Estado y ciclo de vida"](https://es.reactjs.org/docs/state-and-lifecycle.html), esto es porque el virtual DOM es tan rápido; sabe que y cuando cambiar componentes.
+1. Leer el artículo ["Estado y ciclo de vida"](https://es.reactjs.org/docs/state-and-lifecycle.html).
 
 2. Leer el artículo ["Manejando eventos"](https://es.reactjs.org/docs/handling-events.html).
 
