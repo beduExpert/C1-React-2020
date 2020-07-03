@@ -331,11 +331,11 @@ render() {
 }
 ```
 
-22. Hacemos la lógica para eliminar ese nombre de la lista y se lo pasamos a `Nombre.js`.
+22. Hacemos la lógica para eliminar ese nombre de la lista y se lo pasamos a `Nombre.js`. Es MUUUUUUY importante NO modificar la lista directamente, esto causa mutación de datos y es algo que siempre se debe de evitar.
 ```
 ...
 borrarNombreDeLista = (key) => {
-   const copiaDeLista = this.state.listaNombres;
+   const copiaDeLista = [...this.state.listaNombres];
    copiaDeLista.splice(key, 1);
 
    this.setState({
@@ -354,5 +354,61 @@ borrarNombreDeLista = (key) => {
 ...
 ```
 
-15. Resultado:
-<img src="./public/resultado.png" width="400">
+23. Ahora podemos agregar el siguiente ciclo de vida `componentWillUnmount` (cuando el componente se remueve).
+```
+import React from 'react';
+import PropTypes from 'prop-types';
+
+class Nombre extends React.Component {
+   componentDidMount() {
+      alert('Te damos la bienvenida ' + this.props.nombre);
+   }
+
+   componentWillUnmount() {
+      alert('Adiós');
+   }
+
+   render() {
+      return (
+         <div>
+            {this.props.nombre}
+            <button onClick={this.props.borrarNombreDeLista}>
+               X
+            </button>
+         </div>
+      );
+   }
+};
+
+Nombre.propTypes = {
+   nombre: PropTypes.string.isRequired,
+   borrarNombreDeLista: PropTypes.func.isRequired
+}
+
+export default Nombre;
+```
+
+24. Si nos fijamos bien, cada que un nombre es eliminado de la lista, una alerta nos despide. Lo que `componentWillUnmount` hace, es que ejecuta esa función cuando el componente se removió en el virtual DOM y esta listo para ser eliminado de la pantalla.
+
+25. El siguiente ciclo de vida se ejecuta cada que algún estado cambia, el `componentDidUpdate`. Se lo agregamos a `App.js` debajo del constructor.
+```
+constructor(props) {
+   super(props);
+   this.state = {
+      nombre: '',
+      mensaje: '',
+      listaNombres: ['Bedu']
+   };
+};
+
+componentDidUpdate(prevProps, prevState) {
+   if (this.state.listaNombres !== prevState.listaNombres) {
+      this.setState({
+         mensaje: `Longitud de la lista es: ${this.state.listaNombres.length}`
+      })
+   }
+};
+```
+
+26. Resultado:
+<img src="./public/resultado.gif" width="400">
