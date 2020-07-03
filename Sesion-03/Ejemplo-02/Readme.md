@@ -411,4 +411,4 @@ componentDidUpdate(prevProps, prevState) {
 ```
 
 26. Resultado:
-<img src="./public/resultado.gif" width="800">
+<img src="./public/resultado.gif">
