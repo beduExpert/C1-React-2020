@@ -10,4 +10,4 @@
 
 2. Leer el artículo ["Manejando eventos"](https://es.reactjs.org/docs/handling-events.html).
 
-2. Leer el artículo ["Listas y keys"](https://es.reactjs.org/docs/lists-and-keys.html).
+3. Leer el artículo ["Listas y keys"](https://es.reactjs.org/docs/lists-and-keys.html).
