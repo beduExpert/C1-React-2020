@@ -9,7 +9,7 @@
 
 #### REQUISITOS 
 - Tener Node instalado.
-- Completar el [Ejemplo-02](../Ejemplo-02)
+- Completar el [Ejemplo-02](../Ejemplo-02).
 
 #### DESARROLLO
 
