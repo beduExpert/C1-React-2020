@@ -1,8 +1,6 @@
 ## Incrementando de nuevo
 
 ### OBJETIVO
-- Introducción de los hooks.
-- Porqué usarse y ventajas.
 - De componente stateful (clase) a hook.
 
 #### REQUISITOS 
