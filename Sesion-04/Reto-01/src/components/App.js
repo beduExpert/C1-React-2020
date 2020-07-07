@@ -19,12 +19,10 @@ const App = () => {
 			   texto="1"
 			   handleClick={convertir(1, 'uno')}
 			/>
-
 			<Boton
 			   texto="2"
 			   handleClick={convertir(2, 'dos')}
 			/>
-
 			<Boton
 			   texto="3"
 			   handleClick={convertir(3, 'tres')}
