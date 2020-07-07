@@ -79,7 +79,7 @@ export default Luz;
 
 7. Acabamos de convertir el componente `Luz.js` exitosamente, ahora vamos a hacer lo mismo con el componente `LuzMercurial.js`.
 
-8. Cambiamos la línea de declaración de esto: `class LuzMercurial extends React.Component {` a esto `const LuzMercurial = () => {`; no va a funcionar porque todavia no terminamos.
+8. Cambiamos la línea de declaración de esto: `class LuzMercurial extends React.Component {` a esto `const LuzMercurial = () => {`; no va a funcionar porque todavía no terminamos.
 ```
 import React from 'react';
 
