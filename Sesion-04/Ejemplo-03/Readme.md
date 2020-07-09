@@ -19,7 +19,7 @@
 }
 ``` 
 
-4. Vamos a aprender una forma nueva de usar el estado, será parecida a como la usabamos con los componentes srtateful (clase).
+4. Vamos a aprender una forma nueva de usar el estado, será parecida a como la usabamos con los componentes stateful (clase).
 
 5. Creamos el estado `nombre` de la forma como conocemos.
 ```
@@ -61,7 +61,7 @@ export default App;
 
 7. Si te fijas, estamos tratando el estado parecido como lo haciamos antes, llamandolo `state` y la función para editarlo se llama `setState`.
 
-8. Vamos a crear un campo de texto para cada uno y ver como se cambia el valor para los 3 estados que tenemos (nombre, profes y alumnos).
+8. Vamos a crear un campo de texto para cada uno e imprimir el valor para los 3 estados que tenemos (nombre, profes y alumnos).
 
 9. Observa la diferencia de como usar el estado en las 2 maneras diferentes.
 ```
@@ -164,7 +164,7 @@ const App = () => {
 export default App;
 ```
 
-12. En este ejemplo tomamos la decisión de usar un `state` como un objeto contenedor de estados, y como solo guarda 2 valores podriamos crear una función para las 2 sin problema. Pero si nuestra aplicación llegara a usar 100 estados, creariamos 100 funciones? La respuesta es SI.
+12. En este ejemplo tomamos la decisión de usar un `state` como un objeto contenedor de estados, y como solo guarda 2 valores podríamos crear una función para cada una sin problema. Pero si nuestro `state` llegara a usar 100 valores, crearíamos 100 funciones? La respuesta es SI.
 
 13. No te creas, ni de chiste.
 
