@@ -164,11 +164,11 @@ const App = () => {
 export default App;
 ```
 
-12. En este ejemplo tomamos la decisión de usar un `state` como un objeto contenedor de estados, y como solo guarda 2 valores podríamos crear una función para cada una sin problema. Pero si nuestro `state` llegara a usar 100 valores, crearíamos 100 funciones? La respuesta es SI.
+12. En este ejemplo tomamos la decisión de usar un `state` como un objeto contenedor de estados, y como solo guarda 2 valores podríamos crear una función para cada uno sin problema. Pero si nuestro `state` llegara a usar 100 valores, crearíamos 100 funciones? La respuesta es SI.
 
 13. No te creas, ni de chiste.
 
-14. Ahora vamos a crear una función GENÉRICA para cambiar nuestro `state`.
+14. Ahora vamos a crear una función GENÉRICA para cambiar nuestro `state` y la usamos con los alumnos.
 ```
 import React from 'react';
 
@@ -209,7 +209,7 @@ const App = () => {
 export default App;
 ```
 
-15. La función `editarState` no es sencilla, probablemente tengamos muchas dudas de como funciona. Aprovecha a esa persona hermosa y capáz que tienes como profe y preguntale lo que no entiendas.
+15. La función `editarState` no es sencilla, probablemente tengamos muchas dudas de cómo funciona. Aprovecha a esa persona hermosa y capáz que tienes como profe y preguntale lo que no entiendas.
 
 16. Como esta nueva función es genérica para cualquier atributo de `state`, significa que podemos cambiar nuestra forma de editar a los profes, vamos a hacerlo.
 ```
@@ -218,7 +218,7 @@ export default App;
 <br /><br />
 ```
 
-17. Vamos a dejar la función de `editarProfes` para recordar en el futuro que se puede hacer de otra manera.
+17. Vamos a dejar la función de `editarProfes` (aunque ya no se use) para recordar en el futuro que se puede hacer de otra manera.
 
 18. Resultado:
 <img src="./public/resultado.png" width="400">
