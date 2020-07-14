@@ -6,7 +6,7 @@ Cada que veamos los siguientes escenarios, podemos hacerlo de una mejor manera m
 
 Recuerda que no es necesario hacer esto, pero es sugerido para facilitar el entendimiento del código.
 
-#### Alertas en la consola del navegador
+### Alertas en la consola del navegador
 
 1. Cada vez que veamos una alerta como la siguiente `React Hook React.useEffect has a missing dependency: 'cualquierCosa'` podemos evitarla haciendo una función fuera del `useEffect` y añadiendola después.
 
@@ -65,7 +65,7 @@ const willUnmount = () => {
 React.useEffect(willUnmount, []);
 ```
 
-#### Funcionalidades diferentes mezcladas
+### Funcionalidades diferentes mezcladas
 
 1. Si vemos un `useEffect` que tenga demasido código o que haga cosas que no tengan nada que ver con lo que se esta haciendo, podemos separarlos.
 
