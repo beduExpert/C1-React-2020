@@ -208,5 +208,148 @@ export default Nombre;
 
 20. Por la misma razón de la madera, también debemos evitar tener alertas en la consola del navegador. Aquí es cuando te recomiendo seguir las [buenas prácticas para `useEffect`](../../BuenasPracticas/useEffect/Readme.md). Esto es opcional pero recomendado.
 
-12. Resultado
+21. Para este caso se siguió la recomendación de hacerlo por ciclo de vida solamente para mostrarte que podemos tener varios `useEffect`. Si lo hiciste de otra manera esta bien.
+```
+const Nombre = (props) => {
+   const didMount = () => {
+      console.log('Te damos la bienvenida ' + props.nombre);
+   };
+   React.useEffect(didMount, []);
+
+   const willUnmount = () => {
+      return () => {
+         console.log('Adiós');
+      }
+   };
+   React.useEffect(willUnmount, []);
+
+   return (
+      <div>
+         {props.nombre}
+         <button onClick={props.borrarNombreDeLista}>
+            X
+         </button>
+      </div>
+   );
+};
+```
+
+22. Hasta ahorita ya sabemos que podemos:
+   - Pasar de stateful (clase) a stateless (función).
+   - Usar `useState` para los estados ([Sesion-04](../../Sesion-04)).
+   - Recrear los ciclos de vida con hooks.
+   - Tener los `useEffect` que quieras.
+
+23. Ahora vamos a hacer lo mismo con un componente mas extenso, `App.js`.
+
+24. Comenta el `componentDidUpdate`, convierte de stateful a stateless, usa `useState`, y arregla todo lo necesario para que funcione la app.
+
+25. Ya deberías poder hacer todo esto solo; si aún no lo logras, ponte a repasar o toma medidas para que no te quedes atras.
+```
+import React from 'react';
+import Nombre from './Nombre';
+
+const App = () => {
+   const [state, setState] = React.useState({
+      nombre: '',
+      mensaje: '',
+      listaNombres: ['Bedu']
+   })
+
+   // componentDidUpdate(prevProps, prevState) {
+   //    if (state.listaNombres !== prevState.listaNombres) {
+   //       setState({
+   //          mensaje: `Longitud de la lista es: ${state.listaNombres.length}`
+   //       })
+   //    }
+   // };
+
+   const handleInputChange = (event) => {
+      setState({
+         ...state,
+         nombre: event.target.value
+      });
+   };
+
+   const handleClick = () => {
+      const nombreEnEstado = state.nombre;
+      if (!nombreEnEstado) return;
+
+      const listaActualizada = [
+         ...state.listaNombres,
+         nombreEnEstado
+      ];
+
+      setState({
+         ...state,
+         nombre: '',
+         listaNombres: listaActualizada,
+      });
+   };
+
+   const borrarNombreDeLista = (key) => {
+      const copiaDeLista = [...state.listaNombres];
+      copiaDeLista.splice(key, 1);
+
+      setState({
+         ...state,
+         listaNombres: copiaDeLista
+      });
+   };
+
+   return (
+      <div className="margen">
+         {state.mensaje}
+         <br />
+         <input
+            value={state.nombre}
+            onChange={handleInputChange}
+         />
+         <button onClick={handleClick}>
+            Agregar
+         </button>
+
+         <ul>
+            {state.listaNombres.map((nmbr, key) => (
+               <li key={key}>
+                  <Nombre
+                     nombre={nmbr}
+                     borrarNombreDeLista={() => borrarNombreDeLista(key)}
+                  />
+               </li>
+            ))}
+         </ul>
+      </div>
+   );
+}
+
+export default App;
+```
+
+26. Ahora vamos a aprender un `useEffect` nuevo, para el `componentDidUpdate`. Probablemente ya tengas una idea de como es o ya hasta lo hiciste.
+
+27. Sí, solo añadimos la dependencia en el arreglo `[]`.
+```
+React.useEffect(() => {
+   setState({
+      ...state,
+      mensaje: `Longitud de la lista es: ${state.listaNombres.length}`
+   });
+}, [state.listaNombres]);
+```
+
+28. Recuerda seguir las [buenas prácticas para `useEffect`](../../BuenasPracticas/useEffect/Readme.md) para eliminar la alerta de la consola.
+```
+const didUpdate = () => {
+   setState({
+      ...state,
+      mensaje: `Longitud de la lista es: ${state.listaNombres.length}`
+   });
+};
+React.useEffect(didUpdate, [state.listaNombres]);
+```
+
+29. Ahora este nuevo `useEffect` se ejecutará cada vez que el componente se monte y cada que `state.listaNombres` cambie.
+
+30. Resultado
 <img src="./public/resultado.png" width="400">
