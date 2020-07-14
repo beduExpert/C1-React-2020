@@ -8,6 +8,6 @@
 - componentDidMount a hook.
 - componentWillUnmount a hook.
 - componentDidUpdate a hook.
-- Buenas practicas.
+- Buenas prácticas.
 
 ### [Buenas prácticas para `useEffect`](../BuenasPracticas/useEffect/Readme.md).
