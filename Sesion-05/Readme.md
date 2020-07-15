@@ -10,6 +10,6 @@
 - componentWillUnmount a hook.
 - componentDidUpdate a hook.
 - Buenas prácticas.
-- 2 maneras de renderizado condicional.
+- 3 maneras de renderizado condicional.
 
 ### [Buenas prácticas para `useEffect`](../BuenasPracticas/useEffect/Readme.md).
