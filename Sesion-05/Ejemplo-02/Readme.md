@@ -65,9 +65,9 @@ export default App;
 
 8. El código de arriba no va a mostrar nada en pantalla porque `mostrarUsuarios` esta en falso, pero si lo cambias a `true`, va a desplegar el componente.
 
-9. Primero se asegura que `mostrarUsuarios` sea verdadero; en dado caso que no lo sea, termina la condición y no llega al componente. Cuando si es verdadero, llega al componente, verifica que exista (si existe en este caso) y como es la última condición que hay, la imprime.
+9. Primero se asegura que `mostrarUsuarios` sea verdadero; en dado caso que no lo sea, termina la condición y no llega al componente. Cuando sí es verdadero, llega al componente, verifica que exista (sí existe en este caso) y como es la última condición que hay, la imprime.
 
-10. Se recomienda usar este tipo de renderizado con solo una condición, igual como lo tenemos. Verificar si algo es verdadero o falso y después renderizar algo.
+10. Se recomienda usar este tipo de renderizado con solo una condición, igual como lo tenemos. En otras palabras, verificar si algo es verdadero o falso y después renderizar algún componente.
 ```
 {condicionParaRevisar && componenteParaRenderizar}
 ```
@@ -92,7 +92,7 @@ const App = () => {
 export default App;
 ```
 
-12. En este ejemplo se renderiza `componente` cuando la condición es verdadera pero tambien renderizamos algo más cuando es falsa, en este caso renderizamos `noHay`.
+12. En este ejemplo se renderiza `componente` cuando la condición es verdadera pero tambien renderizamos algo más cuando es falsa; en este caso, renderizamos `noHay`.
 
 13. Ya sabemos 2 maneras de imprimir directamente en el `return` del componente, pero puede pasar que necesitemos tener diferentes condiciones o hacer varias declaraciones para poder tomar una decisión al imprimir. Para eso esta la última manera.
 
@@ -250,7 +250,7 @@ const Tareas = () => {
 export default Tareas;
 ```
 
-22. Hacemos lo mismo para `Profes.js` y `Usuarios.js`.
+22. Creamos otros 2: `Profes.js` y `Usuarios.js`.
 
 23. Importamos todos los componentes y los usamos en donde pertenezcan.
 ```
@@ -448,6 +448,7 @@ const Usuarios = () => {
 
 export default Usuarios;
 ```
+30. Ahora ya sabemos 3 maneras de renderizado condicional combinado con `useEffect`. Picale a todo, juega con ella y mas importante, entiende la app y el porqué de su funcionamiento.
 
-30. Resultado:
+31. Resultado:
 <img src="./public/resultado.png" width="400">
