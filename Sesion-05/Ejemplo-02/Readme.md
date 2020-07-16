@@ -304,7 +304,7 @@ export default App;
 import React from 'react';
 
 const Tareas = () => {
-   const [tareas, setTareas] = React.useState([])
+   const [tareas, setTareas] = React.useState([]);
 
    return (
       <div>
@@ -323,7 +323,7 @@ export default Tareas;
 import React from 'react';
 
 const Profes = () => {
-   const [profes, setProfes] = React.useState([])
+   const [profes, setProfes] = React.useState([]);
 
    return (
       <div>
@@ -363,6 +363,91 @@ export default Usuarios;
 ```
 
 27. ¡¡PREGUUUNTAA!! sobre la diferencia entre `!!tareas.length` y `if (!usuarios.length)`, juega con estas declaraciones y no continues hasta que lo entiendas; aprovecha y pregunta cualquier otra cosa.
+
+28. Regresamos a `Tareas.js` para crear un [`setTimeout()`](https://www.w3schools.com/jsref/met_win_settimeout.asp) de 1 segundo cuando el componente se monte y simulamos una llamada al servidor. Te recomiendo seguir las [buenas prácticas para `useEffect`](../../BuenasPracticas/useEffect/Readme.md).
+```
+import React from 'react';
+
+const Tareas = () => {
+   const [tareas, setTareas] = React.useState([]);
+
+   const didMount = () => {
+      setTimeout(
+         () => setTareas(['Leer', 'Preguntar', 'Practicar']),
+         1000
+      );
+   };
+   React.useEffect(didMount, []);
+
+   return (
+      <div>
+         {!tareas.length && '...'}
+         {!!tareas.length && tareas.map((trea) => `${trea} - `)}
+         {/* !!algo - convierte ese algo a booleano (true, false) */}
+      </div>
+   );
+};
+
+export default Tareas;
+```
+
+29. Hacemos lo mismo con `Profes.js` y `Usuarios.js`.
+```
+import React from 'react';
+
+const Profes = () => {
+   const [profes, setProfes] = React.useState([]);
+
+   const didMount = () => {
+      setTimeout(
+         () => setProfes(['Profe 1', 'P2', 'Super Profe']),
+         1000
+      );
+   };
+   React.useEffect(didMount, []);
+
+   return (
+      <div>
+         {
+            profes.length
+               ? profes.map((prf) => `${prf} - `)
+               : '...'
+         }
+      </div>
+   );
+};
+
+export default Profes;
+```
+```
+import React from 'react';
+
+const Usuarios = () => {
+   const [usuarios, setUsuarios] = React.useState([]);
+
+   const didMount = () => {
+      setTimeout(
+         () => setUsuarios(['Usuario', 'User']),
+         1000
+      );
+   };
+   React.useEffect(didMount, []);
+
+   const desplegarUsuarios = () => {
+      if (!usuarios.length) return '...';
+
+      return usuarios.map((usurs) => `${usurs} - `);
+   };
+
+   return (
+      <div>
+         {desplegarUsuarios()}
+      </div>
+   );
+};
+
+export default Usuarios;
+```
 
 18. Resultado:
 <img src="./public/resultado.png" width="400">
