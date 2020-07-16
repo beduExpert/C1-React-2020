@@ -1,4 +1,4 @@
-## Simulando llamadas
+## Simulando llamadas condicionales
 
 ### OBJETIVO
 - Usando useEffect.
@@ -124,14 +124,245 @@ export default App;
 
 15. Ahora en el `return` solo llamamos la función que se hará cargo de retornar el componente correcto y toda la lógica estará dentro de la función.
 
-16. Como esta nueva función es genérica para cualquier atributo de `state`, significa que podemos cambiar nuestra forma de editar a los profes, vamos a hacerlo.
+16. Perfecto, ya sabemos 3 maneras de renderizar con condiciones. Ahora vamos a hacer las 3 para que no se nos olviden.
+
+17. Creamos estados para mostrar usuarios, tareas y profes.
 ```
-<input type="number" onChange={editarState('profes')} />
-{state.profes}
-<br /><br />
+const [mostrarTareas, setMostrarTareas] = React.useState(false);
+const [mostrarProfes, setMostrarProfes] = React.useState(false);
+const [mostrarUsuarios, setMostrarUsuarios] = React.useState(false);
 ```
 
-17. Vamos a dejar la función de `editarProfes` (aunque ya no se use) para recordar en el futuro que se puede hacer de otra manera.
+18. Preparamos botones para verlos.
+```
+import React from 'react';
+
+const App = () => {
+   const [mostrarTareas, setMostrarTareas] = React.useState(false);
+   const [mostrarProfes, setMostrarProfes] = React.useState(false);
+   const [mostrarUsuarios, setMostrarUsuarios] = React.useState(false);
+
+   return (
+      <div className="margen">
+         <button>
+            Tareas
+         </button>
+         <br />
+         <button>
+            Profes
+         </button>
+         <br />
+         <button>
+            Usuarios
+         </button>
+         <br />
+      </div>
+   );
+};
+
+export default App;
+```
+
+19. Preparamos una manera diferente de renderizado para cada una.
+```
+import React from 'react';
+
+const App = () => {
+   const [mostrarTareas, setMostrarTareas] = React.useState(false);
+   const [mostrarProfes, setMostrarProfes] = React.useState(false);
+   const [mostrarUsuarios, setMostrarUsuarios] = React.useState(false);
+
+   const renderizarUsuarios = () => {
+      if (mostrarUsuarios) {
+         return 'Usuarios';
+      }
+   };
+
+   return (
+      <div className="margen">
+         <button>
+            Tareas
+         </button>
+         <br />
+         {mostrarTareas && 'Tareas'}
+         <br /><br />
+
+         <button>
+            Profes
+         </button>
+         <br />
+         {mostrarProfes ? 'Profes' : ''}
+         <br /><br />
+
+         <button>
+            Usuarios
+         </button>
+         <br />
+         {renderizarUsuarios()}
+         <br /><br />
+      </div>
+   );
+};
+
+export default App;
+```
+
+19. Y finalmente creamos las funciones para cambiar el estado.
+```
+<div className="margen">
+   <button onClick={() => setMostrarTareas(!mostrarTareas)}>
+      Tareas
+   </button>
+   <br />
+   {mostrarTareas && 'Tareas'}
+   <br /><br />
+
+   <button onClick={() => setMostrarProfes(!mostrarProfes)}>
+      Profes
+   </button>
+   <br />
+   {mostrarProfes ? 'Profes' : ''}
+   <br /><br />
+
+   <button onClick={() => setMostrarUsuarios(!mostrarUsuarios)}>
+      Usuarios
+   </button>
+   <br />
+   {renderizarUsuarios()}
+   <br /><br />
+</div>
+```
+
+20. Si tienes duda de la manera en la que esta hecha porfavor pregunta, quedarte con dudas solo va a retrasar el progreso.
+
+21. Creamos un nuevo componente llamado `Tareas.js`.
+```
+import React from 'react';
+
+const Tareas = () => {
+   return (
+      <div>
+         Tareas
+      </div>
+   );
+};
+
+export default Tareas;
+```
+
+22. Hacemos lo mismo para `Profes.js` y `Usuarios.js`.
+
+23. Importamos todos los componentes y los usamos en donde pertenezcan.
+```
+import React from 'react';
+import Tareas from './Tareas';
+import Profes from './Profes';
+import Usuarios from './Usuarios';
+
+const App = () => {
+   const [mostrarTareas, setMostrarTareas] = React.useState(false);
+   const [mostrarProfes, setMostrarProfes] = React.useState(false);
+   const [mostrarUsuarios, setMostrarUsuarios] = React.useState(false);
+
+   const renderizarUsuarios = () => {
+      if (mostrarUsuarios) {
+         return <Usuarios />;
+      }
+   };
+
+   return (
+      <div className="margen">
+         <button onClick={() => setMostrarTareas(!mostrarTareas)}>
+            Tareas
+         </button>
+         <br />
+         {mostrarTareas && <Tareas />}
+         <br /><br />
+
+         <button onClick={() => setMostrarProfes(!mostrarProfes)}>
+            Profes
+         </button>
+         <br />
+         {mostrarProfes ? <Profes /> : ''}
+         <br /><br />
+
+         <button onClick={() => setMostrarUsuarios(!mostrarUsuarios)}>
+            Usuarios
+         </button>
+         <br />
+         {renderizarUsuarios()}
+         <br /><br />
+      </div>
+   );
+};
+
+export default App;
+```
+
+24. Dentro de `Tareas.js` creamos un estado de tareas; y usando la primera forma, renderizar la lista de tareas con un map en dado caso que haya o `...` en dado caso que no.
+```
+import React from 'react';
+
+const Tareas = () => {
+   const [tareas, setTareas] = React.useState([])
+
+   return (
+      <div>
+         {!tareas.length && '...'}
+         {!!tareas.length && tareas.map((trea) => `${trea} - `)}
+         {/* !!algo - convierte ese algo a booleano (true, false) */}
+      </div>
+   );
+};
+
+export default Tareas;
+```
+
+25. Dentro de `Profes.js` hacemos lo mismo pero con la 2nda manera.
+```
+import React from 'react';
+
+const Profes = () => {
+   const [profes, setProfes] = React.useState([])
+
+   return (
+      <div>
+         {
+            profes.length
+               ? profes.map((prf) => `${prf} - `)
+               : '...'
+         }
+      </div>
+   );
+};
+
+export default Profes;
+```
+
+26. Lo mismo para `Usuarios.js` pero con la 3ra manera.
+```
+import React from 'react';
+
+const Usuarios = () => {
+   const [usuarios, setUsuarios] = React.useState([]);
+
+   const desplegarUsuarios = () => {
+      if (!usuarios.length) return '...';
+
+      return usuarios.map((usurs) => `${usurs} - `);
+   };
+
+   return (
+      <div>
+         {desplegarUsuarios()}
+      </div>
+   );
+};
+
+export default Usuarios;
+```
+
+27. ¡¡PREGUUUNTAA!! sobre la diferencia entre `!!tareas.length` y `if (!usuarios.length)`, juega con estas declaraciones y no continues hasta que lo entiendas; aprovecha y pregunta cualquier otra cosa.
 
 18. Resultado:
 <img src="./public/resultado.png" width="400">
