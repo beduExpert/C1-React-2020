@@ -449,5 +449,5 @@ const Usuarios = () => {
 export default Usuarios;
 ```
 
-18. Resultado:
+30. Resultado:
 <img src="./public/resultado.png" width="400">
