@@ -13,10 +13,10 @@
 
 2. Seguir las [buenas prácticas para empezar un proyecto](../../BuenasPracticas/EmpezandoProyectos/Readme.md).
 
-3. Imprime las instrucciones cuando el componente de monte.
+3. Imprime las instrucciones cuando el componente se monte.
 	- `Selecciona el género y edad para tener la sugerencia de un regalo.`
 
-4. Usa radio buttons, onClick, CSS y renderizado condicional.
+4. Usa radio buttons, onClick, [switch](https://www.w3schools.com/js/js_switch.asp) y renderizado condicional.
 
 5. Regalos:
 	- Damas
