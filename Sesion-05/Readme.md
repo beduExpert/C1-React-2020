@@ -1,9 +1,15 @@
+## Sesión 04: Hooks y useEffect
 
-## Sesión 05: Nombre de la sesión
+### OBJETIVOS
+- Convertir los 3 ciclos de vida a hooks.
+- Buenas practicas para useEffect.
+- Renderizado condicional.
 
-### OBJETIVOS 
+#### ORGANIZACION DE LA CLASE
+- componentDidMount a hook.
+- componentWillUnmount a hook.
+- componentDidUpdate a hook.
+- Buenas prácticas.
+- 3 maneras de renderizado condicional.
 
-
-
-#### ORGANIZACION DE LA CLASE 
-
+### [Buenas prácticas para `useEffect`](../BuenasPracticas/useEffect/Readme.md).
