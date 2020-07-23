@@ -1,4 +1,4 @@
-## Sesión 04: Hooks y useEffect
+## Sesión 05: Hooks y useEffect
 
 ### OBJETIVOS
 - Convertir los 3 ciclos de vida a hooks.
