@@ -245,9 +245,10 @@ export default withRouter(SubtemaViejo);
 
 22. Las `props` vienen con 3 objetos: history, location y match. La que nosotros necesitamos es la de `match`.
 
-23. [Destructuramos](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment) nuestra variable `subtema`, la renderizamos y borramos el `console.log()`.
+23. [Destructuramos](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment) nuestra variable `subtema`, la renderizamos y borramos el `console.log()`. Recuerda seguir las [buenas prácticas para propiedades (props)](../../BuenasPracticas/PropTypes/Readme.md).
 ```
 import React from 'react';
+import PropTypes from 'prop-types';
 import { withRouter } from 'react-router';
 
 const SubtemaViejo = (props) => {
@@ -262,6 +263,14 @@ const SubtemaViejo = (props) => {
          {subtema}
       </p>
    );
+};
+
+SubtemaViejo.propTypes = {
+   match: PropTypes.shape({
+      params: PropTypes.shape({
+         subtema: PropTypes.string
+      })
+   })
 };
 
 export default withRouter(SubtemaViejo);
@@ -342,9 +351,10 @@ export default Header;
 
 31. Ahora vamos a `PlanReact.js` y de la manera vieja (antes de los hooks) vamos a obtener y usar el url que se este usando en ese momento.
 
-32. Importamos `withRouter`, lo usamos, destructuramos lo que necesitamos y lo ponemos en el `<Link />`.
+32. Importamos `withRouter`, lo usamos, destructuramos lo que necesitamos y lo ponemos en el `<Link />`. Recuerda seguir las [buenas prácticas para propiedades (props)](../../BuenasPracticas/PropTypes/Readme.md)
 ```
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Link, withRouter } from 'react-router-dom';
 
 const PlanReact = (props) => {
@@ -365,6 +375,12 @@ const PlanReact = (props) => {
          </Link>
       </div>
    );
+};
+
+PlanReact.propTypes = {
+   match: PropTypes.shape({
+      url: PropTypes.string
+   })
 };
 
 export default withRouter(PlanReact);
