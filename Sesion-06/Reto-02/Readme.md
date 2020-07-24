@@ -32,5 +32,5 @@
 <img src="./public/4.gif">
 
 9. Avisar cuando es Memo usando el `useEffect`.
-<img src="./public/4.gif">
+<img src="./public/5.gif">
 
