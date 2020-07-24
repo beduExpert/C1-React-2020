@@ -447,10 +447,10 @@ export default App;
 ```
 
 37. Aprendiste y aplicaste lo siguiente:
-   - `exact path=""` vs `path=""`
-   - Buenas prácticas para manejar rutas (constants)
-   - Mandar parámetros por url
-   - Obtener `url` y parámetros con HOC (higher-order component, withRouter)
+   - `exact path=""` vs `path=""`.
+   - Buenas prácticas para manejar rutas (constants).
+   - Mandar parámetros por url.
+   - Obtener `url` y parámetros con HOC (higher-order component, withRouter).
    - Obtener `url` y parámetros con Hooks.
 
 38. Resultado:
