@@ -30,21 +30,3 @@ const App = () => {
 };
 
 export default App;
-
-
-// <BrowserRouter basename="/#/home">
-// 	{/* The upper line is to match singleSPA routes */}
-// 	<Theme>
-// 		<Header />
-// 		<Body>
-// 			<Route exact path={PATHS.home} component={Home} />
-// 			<Route exact path={PATHS.scan} component={QRScanner} />
-// 			<Route exact path={PATHS.details} component={DetailsBase} />
-// 			<Route exact path={PATHS.results} component={Results} />
-// 			<Route exact path={PATHS.messages} component={Messages} />
-// 			<Route exact path={PATHS.comingSoon} component={Coming} />
-// 			<Route exact path={PATHS.milestones} component={Milestones} />
-// 			<Route exact path={PATHS.notifications} component={Notifications} />
-// 		</Body>
-// 	</Theme>
-// </BrowserRouter>
