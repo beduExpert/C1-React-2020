@@ -7,5 +7,5 @@
 - react router dom.
 - Componente anchor (a).
 - Componente Link.
-- Parametros por url.
+- Parámetros por url.
 - Exact path.
