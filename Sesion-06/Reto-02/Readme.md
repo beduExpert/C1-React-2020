@@ -31,6 +31,6 @@
 8. Solo desplegar `salón` si `escuela` existe y `nombre` si `salón` existe.
 <img src="./public/4.gif">
 
-9. Avisar cuando es Memo.
+9. Avisar cuando es Memo usando el `useEffect`.
 <img src="./public/4.gif">
 
