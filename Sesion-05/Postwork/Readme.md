@@ -1,8 +1,3 @@
-## Regalo perfecto
-
-### OBJETIVO
-- Renderizado condicional
-
 #### REQUISITOS
 - Haber completado el [Reto-01](../Reto-01).
 - Haber completado el [Reto-02](../Reto-02).
