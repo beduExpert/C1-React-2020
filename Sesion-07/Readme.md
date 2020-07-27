@@ -9,8 +9,10 @@
 - Responsividad.
 - Como descargarla.
 
-### EJEMPLOS
+#### EJEMPLOS
 - [Tinder](https://tinder.com/)
 - [Trivago](https://www.trivago.in/)
 - [Pinterest](https://www.pinterest.com/)
 - [Google Maps](https://www.google.co.in/maps/)
+
+### [Configurar una PWA](../BuenasPracticas/PWA/Readme.md).
