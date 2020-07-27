@@ -207,7 +207,7 @@ const App = () => {
 export default App;
 ```
 
-19. Y finalmente creamos las funciones para cambiar el estado.
+20. Y finalmente creamos las funciones para cambiar el estado.
 ```
 <div className="margen">
    <button onClick={() => setMostrarTareas(!mostrarTareas)}>
@@ -233,9 +233,9 @@ export default App;
 </div>
 ```
 
-20. Si tienes duda de la manera en la que esta hecha porfavor pregunta, quedarte con dudas solo va a retrasar el progreso.
+21. Si tienes duda de la manera en la que esta hecha porfavor pregunta, quedarte con dudas solo va a retrasar el progreso.
 
-21. Creamos un nuevo componente llamado `Tareas.js`.
+22. Creamos un nuevo componente llamado `Tareas.js`.
 ```
 import React from 'react';
 
@@ -250,9 +250,9 @@ const Tareas = () => {
 export default Tareas;
 ```
 
-22. Creamos otros 2: `Profes.js` y `Usuarios.js`.
+23. Creamos otros 2: `Profes.js` y `Usuarios.js`.
 
-23. Importamos todos los componentes y los usamos en donde pertenezcan.
+24. Importamos todos los componentes y los usamos en donde pertenezcan.
 ```
 import React from 'react';
 import Tareas from './Tareas';
@@ -299,7 +299,7 @@ const App = () => {
 export default App;
 ```
 
-24. Dentro de `Tareas.js` creamos un estado de tareas; y usando la primera forma, renderizar la lista de tareas con un map en dado caso que haya o `...` en dado caso que no.
+25. Dentro de `Tareas.js` creamos un estado de tareas; y usando la primera forma, renderizar la lista de tareas con un map en dado caso que haya o `...` en dado caso que no.
 ```
 import React from 'react';
 
@@ -318,7 +318,7 @@ const Tareas = () => {
 export default Tareas;
 ```
 
-25. Dentro de `Profes.js` hacemos lo mismo pero con la 2nda manera.
+26. Dentro de `Profes.js` hacemos lo mismo pero con la 2nda manera.
 ```
 import React from 'react';
 
@@ -339,7 +339,7 @@ const Profes = () => {
 export default Profes;
 ```
 
-26. Lo mismo para `Usuarios.js` pero con la 3ra manera.
+27. Lo mismo para `Usuarios.js` pero con la 3ra manera.
 ```
 import React from 'react';
 
@@ -362,9 +362,9 @@ const Usuarios = () => {
 export default Usuarios;
 ```
 
-27. ¡¡PREGUUUNTAA!! sobre la diferencia entre `!!tareas.length` y `if (!usuarios.length)`, juega con estas declaraciones y no continues hasta que lo entiendas; aprovecha y pregunta cualquier otra cosa.
+28. ¡¡PREGUUUNTAA!! sobre la diferencia entre `!!tareas.length` y `if (!usuarios.length)`, juega con estas declaraciones y no continues hasta que lo entiendas; aprovecha y pregunta cualquier otra cosa.
 
-28. Regresamos a `Tareas.js` para crear un [`setTimeout()`](https://www.w3schools.com/jsref/met_win_settimeout.asp) de 1 segundo cuando el componente se monte y simulamos una llamada al servidor. Te recomiendo seguir las [buenas prácticas para `useEffect`](../../BuenasPracticas/useEffect/Readme.md).
+29. Regresamos a `Tareas.js` para crear un [`setTimeout()`](https://www.w3schools.com/jsref/met_win_settimeout.asp) de 1 segundo cuando el componente se monte y simulamos una llamada al servidor. Te recomiendo seguir las [buenas prácticas para `useEffect`](../../BuenasPracticas/useEffect/Readme.md).
 ```
 import React from 'react';
 
@@ -391,7 +391,7 @@ const Tareas = () => {
 export default Tareas;
 ```
 
-29. Hacemos lo mismo con `Profes.js` y `Usuarios.js`.
+30. Hacemos lo mismo con `Profes.js` y `Usuarios.js`.
 ```
 import React from 'react';
 
@@ -448,7 +448,7 @@ const Usuarios = () => {
 
 export default Usuarios;
 ```
-30. Ahora ya sabemos 3 maneras de renderizado condicional combinado con `useEffect`. Picale a todo, juega con ella y mas importante, entiende la app y el porqué de su funcionamiento.
+31. Ahora ya sabemos 3 maneras de renderizado condicional combinado con `useEffect`. Picale a todo, juega con ella y mas importante, entiende la app y el porqué de su funcionamiento.
 
-31. Resultado:
+32. Resultado:
 <img src="./public/resultado.png" width="400">
