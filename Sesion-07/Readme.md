@@ -1,9 +1,10 @@
+## Sesión 07: Progressive web apps (PWA)
 
-## Sesión 07: Nombre de la sesión
+### OBJETIVOS
+- Configurar la aplicación react para hacerla progressive web app.
+- Configurar un service worker.
 
-### OBJETIVOS 
-
-
-
-#### ORGANIZACION DE LA CLASE 
-
+#### ORGANIZACION DE LA CLASE
+- PWA.
+- Responsividad.
+- Como descargarla.
