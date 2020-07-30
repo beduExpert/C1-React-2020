@@ -91,8 +91,6 @@ Ve a `public/index.html` y asegurate de tener el siguiente código en el tag de 
 <meta name="apple-mobile-web-app-capable" content="yes"> 
 
 <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
-
-<link rel="apple-touch-icon" href="icon-120.png">
 ```
 
 # Verificar estado `offline` (opcional)
