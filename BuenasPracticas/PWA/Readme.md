@@ -191,7 +191,7 @@ Podemos hacer nuevas pantallas de bienvenida para cada resolución de los dispos
 <link rel="apple-touch-startup-image" href="splash_1668x2224.jpg" media="(min-device-width: 834px) and (max-device-width: 834px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait)">
 <link rel="apple-touch-startup-image" href="splash_2048x2732.jpg" media="(min-device-width: 1024px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait)">
 ```
-Hay que asegurarse de agregar estas imagenes al folder `public`. Así es como el folder deberia de verse al finalizar.
+Hay que asegurarse de agregar estas imagenes al folder `public`. Así es como el folder debería de verse al finalizar.
 ![](./09.png)
 
 <img src="./10.png" width="200">
