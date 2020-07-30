@@ -8,7 +8,7 @@ Para habilitar la PWA tenemos que registrarlo con `register()`.
 # Habilitar [Workbox](https://developers.google.com/web/tools/workbox)
 En la terminal instalamos una librería, `npm install react-app-rewired` lo que nos permitirá reescribir la configuración de webpack sin necesidad de `eject` nuestra app.
 <br />
-Cambia la versión del `package.json` a 1.0.0. También cambia los scripts `start` y `build` a que usen la librería instalada (solo esos 2).
+Cambia la versión del `package.json` a `1.0.0`. También cambia los scripts `start` y `build` a que usen la librería instalada (solo esos 2).
 <img src="./03.png" width="400">
 
 Crea un nuevo archivo `config-overrides.js` en la raíz del proyecto con el siguiente código:
@@ -75,7 +75,7 @@ workbox.precaching.precacheAndRoute(self.__precacheManifest || [])
 <img src="./04.png" width="200">
 
 # Nomenclatura
-Dentro de `manifest.json` podemos especificar un nombre (`name`) y nombre corto (`short_name`).
+Dentro de `public/manifest.json` podemos especificar un nombre (`name`) y nombre corto (`short_name`).
 <br />
 El `short_name` tiene una longitud de máximo 12 caracteres y es usado cuando la app es instalada en los dispositivos.
 <br />
@@ -99,6 +99,7 @@ Ve a `public/index.html` y asegurate de tener el siguiente código en el tag de 
 Podemos llamar a `navigator.onLine` para ver si la app esta en línea o no.
 <br />
 Podemos crear el estado como booleano.
+<br />
 <img src="./05.png" width="400">
 
 Después crear los `event listeners` para manejar el estado.
@@ -175,7 +176,7 @@ Para IOS necesitamos expecificar los íconos directo en el `index.html`; hay que
 ```
 
 Cuando la app este en producción, podremos ver todos los íconos configurados:
-![](/08.png)
+![](./08.png)
 
 # Pantallas de bienvenida (opcional)
 Android despliega una [pantalla de bienvenida](https://www.google.com/search?q=splash+screen&sxsrf=ALeKk02ZE6j32IrLwa7e3ibg93my8nGODg:1596111514161&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiO68re-vTqAhWJJTQIHUOGCqoQ_AUoAXoECBMQAw&biw=1440&bih=821) basada en el ícono y nombre que se configuró, pero IOS solo despliega un color sólido por defecto.
@@ -191,6 +192,6 @@ Podemos hacer nuevas pantallas de bienvenida para cada resolución de los dispos
 <link rel="apple-touch-startup-image" href="splash_2048x2732.jpg" media="(min-device-width: 1024px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait)">
 ```
 Hay que asegurarse de agregar estas imagenes al folder `public`. Así es como el folder deberia de verse al finalizar.
-![](/09.png)
+![](./09.png)
 
 <img src="./10.png" width="200">
