@@ -2,13 +2,13 @@
 Cada vez que creamos una nueva app con `create-react-app` viene con código predefinido en el `index.js` y un `serviceWorker.unregister();`.
 <br />
 Para habilitar la PWA tenemos que registrarlo con `register()`.
-<img src="/01.png" width="400">
+<img src="./01.png" width="400">
 
 # Habilitar [Workbox](https://developers.google.com/web/tools/workbox)
 En la terminal instalamos una librería, `npm install react-app-rewired` lo que nos permitirá reescribir la configuración de webpack sin necesidad de `eject` nuestra app.
 <br />
 Cambia la versión del `package.json` a 1.0.0. También cambia los scripts `start` y `build` a que usen la librería instalada (solo esos 2).
-<img src="/03.png" width="400">
+<img src="./03.png" width="400">
 
 Crea un nuevo archivo `config-overrides.js` en la raíz del proyecto con el siguiente código:
 ```
@@ -29,7 +29,7 @@ module.exports = function override(config) {
   return config;
 };
 ```
-<img src="/02.png" width="200">
+<img src="./02.png" width="200">
 
 Crea un service worker `sw.js` dentro del folder `src` con lo siguiente:
 ```
@@ -71,7 +71,7 @@ self.addEventListener('push', event => {
 // Comentar para prevenir que la PWA guarde cache
 workbox.precaching.precacheAndRoute(self.__precacheManifest || [])
 ```
-<img src="/04.png" width="200">
+<img src="./04.png" width="200">
 
 # Nomenclatura
 Dentro de `manifest.json` podemos especificar un nombre (`name`) y nombre corto (`short_name`).
@@ -98,16 +98,16 @@ Ve a `public/index.html` y asegurate de tener el siguiente código en el tag de 
 Podemos llamar a `navigator.onLine` para ver si la app esta en línea o no.
 <br />
 Podemos crear el estado como booleano.
-<img src="/05.png" width="400">
+<img src="./05.png" width="400">
 
 Después crear los `event listeners` para manejar el estado.
-<img src="/06.png" width="700">
+<img src="./06.png" width="700">
 
 # Íconos (opcional)
 Asegurarse de subir los íconos con las dimensiones necesarias; 8 son los necesarios. Estos van en el folder `public`.
 <br />
 
-<img src="/07.png" width="200">
+<img src="./07.png" width="200">
 
 Ve al folder `public` y abre los archivos `manifest.json` e `index.html`.
 <br />
@@ -192,4 +192,4 @@ Podemos hacer nuevas pantallas de bienvenida para cada resolución de los dispos
 Hay que asegurarse de agregar estas imagenes al folder `public`. Así es como el folder deberia de verse al finalizar.
 ![](/09.png)
 
-<img src="/10.png" width="200">
+<img src="./10.png" width="200">
