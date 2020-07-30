@@ -48,11 +48,11 @@ workbox.routing.registerRoute(
 )
 
 self.addEventListener('fetch', event => {
-  if(event.request.method === "POST" || event.request.method === "DELETE") {
+  if(event.request.method === 'POST' || event.request.method === 'DELETE') {
     event.respondWith(
       fetch(event.request).catch(err => {
         return new Response(
-          JSON.stringify({ error: "This action disabled while app is offline" }), {
+          JSON.stringify({ error: 'This action disabled while app is offline' }), {
             headers: { 'Content-Type': 'application/json' }
           }
         )
@@ -62,36 +62,56 @@ self.addEventListener('fetch', event => {
 })
 
 self.addEventListener('push', event => {
-  event.waitUntil(self.registration.showNotification('PLUM', {
-    icon: '/walmartLogo.png',
+  event.waitUntil(self.registration.showNotification('Mi PWA', {
+    icon: '/logo192.png',
     body: event.data.text()
   }))
 })
 
-// Comment to prevent PWA to cache the app
+// Comentar para prevenir que la PWA guarde cache
 workbox.precaching.precacheAndRoute(self.__precacheManifest || [])
 ```
-
 <img src="/04.png" width="200">
 
-# - Verify offline status
-We can call the ```navigator.onLine``` to see if the app is online or not.<br />
-We can set it to the state to make a boolean.
+# Nomenclatura
+Dentro de `manifest.json` podemos especificar un nombre (`name`) y nombre corto (`short_name`).
+<br />
+El `short_name` tiene una longitud de máximo 12 caracteres y es usado cuando la app es instalada en los dispositivos.
+<br />
+El `name` tiene máximo 45 caracteres; es usado en la Chrome Web Store y en los dialogos de instalación.
+<br />
+Si no se especifica un `short_name`, el `name` será usado y truncado de ser necesario.
 
+# Configuración HTML final
+Ve a `public/index.html` y asegurate de tener el siguiente código en el tag de `<head>`:
+```
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="apple-mobile-web-app-capable" content="yes"> 
+
+<link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+
+<link rel="apple-touch-icon" href="icon-120.png">
+```
+
+# Verificar estado `offline` (opcional)
+Podemos llamar a `navigator.onLine` para ver si la app esta en línea o no.
+<br />
+Podemos crear el estado como booleano.
 <img src="/05.png" width="400">
 
-Then set the listeners for the online and offline events.
-
+Después crear los `event listeners` para manejar el estado.
 <img src="/06.png" width="700">
 
-# - Icons
-Make sure you upload the necessary icons with the necessary dimension; 8 icons are needed.<br />
-Please upload these needed icons to the public folder.
+# Íconos (opcional)
+Asegurarse de subir los íconos con las dimensiones necesarias; 8 son los necesarios. Estos van en el folder `public`.
+<br />
 
 <img src="/07.png" width="200">
 
-Go to the public folder and look for "manifest.json" and "index.html".<br />
-Open the ```manifest.json``` and make sure to provide the corresponding icons to it; at the end it will look something like this:
+Ve al folder `public` y abre los archivos `manifest.json` e `index.html`.
+<br />
+Dentro de `manifest.json` especificar los íconos:
 ```
 {
   "short_name": "Todo List",
@@ -144,39 +164,22 @@ Open the ```manifest.json``` and make sure to provide the corresponding icons to
 }
 
 ```
-For IOS we need to link the icons directly in the ```index.html``` file; put them in the head tag.
+
+Para IOS necesitamos expecificar los íconos directo en el `index.html`; hay que ponerlos en el tag de `head`.
 ```
 <link rel="apple-touch-icon" href="icon-120.png">
 <link rel="apple-touch-icon" sizes="152x152" href="icon-152.png">
 <link rel="apple-touch-icon" sizes="180x180" href="icon-180.png">
 <link rel="apple-touch-icon" sizes="167x167" href="icon-167.png">
 ```
-When in prod, we will be able to see all the icons configured:
+
+Cuando la app este en producción, podremos ver todos los íconos configurados:
 ![](/08.png)
 
-# - Naming
-In the same ```manifest.json``` we can configure the "name" and "short_name".<br />
-The short name has a maximum length of 12 characters, and is used underneath your app when it is installed on a user's homescreen.<br />
-The full name has a maximum length of 45 characters, and is used in the Chrome web store, and in the installation dialog boxes, when a user is installing your application.<br />
-If you don't specify a short name, then the long name will be truncated to fit the space.
-
-# - Final HTML setup
-Go to ```public/index.html``` file and make sure to have the next code inside the ```<head>``` tag:
-```
-<meta name="apple-mobile-web-app-status-bar-style" content="default">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="apple-mobile-web-app-capable" content="yes"> 
-
-<link rel="manifest" href="%PUBLIC_URL%/manifest.json">
-
-<link rel="apple-touch-icon" href="icon-120.png">
-<link rel="apple-touch-icon" sizes="152x152" href="icon-152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="icon-180.png">
-<link rel="apple-touch-icon" sizes="167x167" href="icon-167.png">
-```
-Android displays a splash screen for PWAs based on the icons and names you provide, but iOS just displays a solid color splash screen for installed PWAs by default.<br />
-We'll make a new splash screen image for every iOS device resolution size that we want to support, and then we can make a ```link``` tag in ```public/index.html``` to specify those images as the splash screen for each device resolution.<br />
-So add these lines to the file:
+# Pantallas de bienvenida (opcional)
+Android despliega una [pantalla de bienvenida](https://www.google.com/search?q=splash+screen&sxsrf=ALeKk02ZE6j32IrLwa7e3ibg93my8nGODg:1596111514161&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiO68re-vTqAhWJJTQIHUOGCqoQ_AUoAXoECBMQAw&biw=1440&bih=821) basada en el ícono y nombre que se configuró, pero IOS solo despliega un color sólido por defecto.
+<br />
+Podemos hacer nuevas pantallas de bienvenida para cada resolución de los dispositivos IOS que queramos soportar, después creamos tags de `link` dentro de `public/index.html` para especificar esas imagenes como las bienvenidas para cada resolución.
 ```
 <link rel="apple-touch-startup-image" href="splash_640x1136.jpg" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
 <link rel="apple-touch-startup-image" href="splash_750x1334.jpg" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
@@ -186,7 +189,7 @@ So add these lines to the file:
 <link rel="apple-touch-startup-image" href="splash_1668x2224.jpg" media="(min-device-width: 834px) and (max-device-width: 834px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait)">
 <link rel="apple-touch-startup-image" href="splash_2048x2732.jpg" media="(min-device-width: 1024px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait)">
 ```
-Then make sure to add those images to the public folder, here is an example of how the public folder should look like:
+Hay que asegurarse de agregar estas imagenes al folder `public`. Así es como el folder deberia de verse al finalizar.
 ![](/09.png)
 
 <img src="/10.png" width="200">
