@@ -2,6 +2,7 @@
 Cada vez que creamos una nueva app con `create-react-app` viene con código predefinido en el `index.js` y un `serviceWorker.unregister();`.
 <br />
 Para habilitar la PWA tenemos que registrarlo con `register()`.
+<br />
 <img src="./01.png" width="400">
 
 # Habilitar [Workbox](https://developers.google.com/web/tools/workbox)
