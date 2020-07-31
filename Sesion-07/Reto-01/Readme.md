@@ -18,18 +18,47 @@
 
 5. TODO debe de ser dinámico: precios, nombres y cantidad de ingredientes.
 
-6. Los ingredientes son:
+6. Los ingredientes tienen un precio de $1 por defecto y pueden ser decimales; estos son:
 	- pan1 (arriba)
 	- lechuga
 	- queso
 	- carne
 	- pan2 (abajo)
 
-7. Ese es el orden en el que deben de aparecer en la app. Para esta app las hamburguesas SIEMPRE llevan pan1 y pan2 como mínimo, los demas ingrediente son ilimitados.
+7. Ese es el orden en el que deben de aparecer en la app. Para esta app, las hamburguesas SIEMPRE llevan pan1 y pan2 como mínimo, los demas ingrediente son ilimitados.
 
-8. Ten mucho cuidado de no mutar la información. Para esto te recomiendo instalar y usar la librería [`immutable`](https://immutable-js.github.io/immutable-js/docs/#/). Solo vas a necesitar 
+8. Ten mucho cuidado de no mutar la información. Para esto te recomiendo instalar y usar la librería [`immutable`](https://immutable-js.github.io/immutable-js/docs/#/). Solo vas a necesitar usar [`setIn()`](https://immutable-js.github.io/immutable-js/docs/#/setIn) para este reto, puedes usar otras cosas de la librería si gustas.
 
-9. Hazme sentir orgullo :')
+9. Mira todos los objetivos antes de empezar, piensa en un plan para completar todos y usa todo lo que hemos visto hasta esta sesión.
 
-10. Poder empezar a buscar directamente o desde las instrucciones.
+10. Es un reto difícil, por lo que te recomiendo preguntar e idear junto con los demás.
+
+#### OBJETIVOS
+
+1. Vas a necesitar un `estadoGlobal` que vas a pasar a la mayoría o a todos los componentes; tambien la función para actualizarla.
+
+2. Usar `react-router-dom` para navegar entre precios, cotizador e instrucciones.
 <img src="./public/1.gif">
+
+3. No se puede agregar una persona si el nombre esta vacio.
+<img src="./public/2.gif">
+
+4. Cada que una persona se agregue y/o modifique, se debe de actualizar el total de la compra así como el total de la hamburguesa individual.
+<img src="./public/3.gif">
+
+5. Si los precios se modifican y hay personas con pedidos, los totales deben de actualizarse también. Incluso cuando se sumen o resten ingredientes después de eso.
+<img src="./public/4.gif">
+
+6. No se aceptan números negativos para ingredientes.
+<img src="./public/5.gif">
+
+7. Todo lo anterior incluye si hay varias personas.
+<img src="./public/6.gif">
+
+8. Configurarla como PWA y publicarla en internet.
+
+9. Presumirla con los demás y que te valga mdr (madera) si no les gusta.
+
+10. Se pueden usar todas las [buenas prácticas](../../BuenasPracticas) que hemos visto.
+
+11. En dado caso que no hayas completado el reto, ve, analiza, entiende y practica con el resultado que puedes encontrar en esta misma carpeta.
