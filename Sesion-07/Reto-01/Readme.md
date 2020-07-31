@@ -24,11 +24,12 @@
 	- queso
 	- carne
 	- pan2 (abajo)
-Ese es el orden en el que deben de aparecer en la app. Para esta app las hamburguesas SIEMPRE llevan pan1 y pan2 como mínimo, los demas ingrediente son ilimitados.
 
-7. Ten mucho cuidado de no mutar la información. Para esto te recomiendo instalar y usar la librería [`immutable`](https://immutable-js.github.io/immutable-js/docs/#/). Solo vas a necesitar 
+7. Ese es el orden en el que deben de aparecer en la app. Para esta app las hamburguesas SIEMPRE llevan pan1 y pan2 como mínimo, los demas ingrediente son ilimitados.
 
-8. Hazme sentir orgullo :')
+8. Ten mucho cuidado de no mutar la información. Para esto te recomiendo instalar y usar la librería [`immutable`](https://immutable-js.github.io/immutable-js/docs/#/). Solo vas a necesitar 
 
-9. Poder empezar a buscar directamente o desde las instrucciones.
+9. Hazme sentir orgullo :')
+
+10. Poder empezar a buscar directamente o desde las instrucciones.
 <img src="./public/1.gif">
