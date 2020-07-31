@@ -15,7 +15,7 @@ const App = () => {
 	const editarState = (atributo) => (event) => setState({
 		...state,
 		[atributo]: event.target.value
-	});;
+	});
 
 	return (
 		<div className="margen">
