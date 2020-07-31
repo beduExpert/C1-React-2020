@@ -18,14 +18,14 @@
 
 5. TODO debe de ser dinámico: precios, nombres y cantidad de ingredientes.
 
-6. Los ingredientes tienen un precio de $1 por defecto y pueden ser decimales; estos son:
+6. Los ingredientes tienen un precio de $1 por defecto y son:
 	- pan1 (arriba)
 	- lechuga
 	- queso
 	- carne
 	- pan2 (abajo)
 
-7. Ese es el orden en el que deben de aparecer en la app. Para esta app, las hamburguesas SIEMPRE llevan pan1 y pan2 como mínimo, los demas ingrediente son ilimitados.
+7. Para esta app, las hamburguesas SIEMPRE llevan pan1 y pan2 como mínimo, los demas ingrediente son ilimitados.
 
 8. Ten mucho cuidado de no mutar la información. Para esto te recomiendo instalar y usar la librería [`immutable`](https://immutable-js.github.io/immutable-js/docs/#/). Solo vas a necesitar usar [`setIn()`](https://immutable-js.github.io/immutable-js/docs/#/setIn) para este reto, puedes usar otras cosas de la librería si gustas.
 
