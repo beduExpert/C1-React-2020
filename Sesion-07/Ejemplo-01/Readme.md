@@ -65,6 +65,6 @@
 24. Una vez adentro, agarramos y arrastramos nuestra carpeta `build` dentro del recuadro.
 <img src="./img/8.gif">
 
-25. Abre el url de la app y listo.
+25. Abre el url de la app y listo, ya tenemos nuestra React PWA en internet.
 <img src="./img/9.png" width="500">
 
