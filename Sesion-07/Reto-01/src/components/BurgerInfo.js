@@ -72,14 +72,14 @@ const BurgerInfo = (props) => {
 BurgerInfo.propTypes = {
 	casilla: PropTypes.number.isRequired,
 	estadoGlobal: PropTypes.object.isRequired,
-   setEstadoGlobal: PropTypes.func.isRequired,
-   precios: PropTypes.shape({
-   	pan1: PropTypes.string.isRequired,
-   	lechuga: PropTypes.string.isRequired,
-   	queso: PropTypes.string.isRequired,
-   	carne: PropTypes.string.isRequired,
-   	pan2: PropTypes.string.isRequired
-   }),
+	setEstadoGlobal: PropTypes.func.isRequired,
+	precios: PropTypes.shape({
+		pan1: PropTypes.string.isRequired,
+		lechuga: PropTypes.string.isRequired,
+		queso: PropTypes.string.isRequired,
+		carne: PropTypes.string.isRequired,
+		pan2: PropTypes.string.isRequired
+	}),
 	burger: PropTypes.shape({
 		lechuga: PropTypes.number,
 		queso: PropTypes.number,

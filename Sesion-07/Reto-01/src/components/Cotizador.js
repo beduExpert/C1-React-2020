@@ -28,12 +28,12 @@ const Cotizador = (props) => {
 
 		const burgerNueva = {
 			nombre,
-      	pan1: 1,
-      	lechuga: 0,
-      	queso: 0,
-      	carne: 0,
-      	pan2: 1
-      };
+			pan1: 1,
+			lechuga: 0,
+			queso: 0,
+			carne: 0,
+			pan2: 1
+		};
 
 		const burgersActualizadas = [
 			...estadoGlobal.hamburguesas,
@@ -77,17 +77,17 @@ const Cotizador = (props) => {
 };
 
 Cotizador.propTypes = {
-   setEstadoGlobal: PropTypes.func.isRequired,
-   estadoGlobal: PropTypes.shape({
-      hamburguesas: PropTypes.array.isRequired,
-      precios: PropTypes.shape({
-      	pan1: PropTypes.string.isRequired,
-      	lechuga: PropTypes.string.isRequired,
-      	queso: PropTypes.string.isRequired,
-      	carne: PropTypes.string.isRequired,
-      	pan2: PropTypes.string.isRequired
-      })
-   })
+	setEstadoGlobal: PropTypes.func.isRequired,
+	estadoGlobal: PropTypes.shape({
+		hamburguesas: PropTypes.array.isRequired,
+		precios: PropTypes.shape({
+			pan1: PropTypes.string.isRequired,
+			lechuga: PropTypes.string.isRequired,
+			queso: PropTypes.string.isRequired,
+			carne: PropTypes.string.isRequired,
+			pan2: PropTypes.string.isRequired
+		})
+	})
 };
 
 export default Cotizador;

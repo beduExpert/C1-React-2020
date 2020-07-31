@@ -64,17 +64,17 @@ const Precios = (props) => {
 };
 
 Precios.propTypes = {
-   setEstadoGlobal: PropTypes.func.isRequired,
-   estadoGlobal: PropTypes.shape({
-      hamburguesas: PropTypes.array.isRequired,
-      precios: PropTypes.shape({
-      	pan1: PropTypes.string.isRequired,
-      	lechuga: PropTypes.string.isRequired,
-      	queso: PropTypes.string.isRequired,
-      	carne: PropTypes.string.isRequired,
-      	pan2: PropTypes.string.isRequired
-      })
-   })
+	setEstadoGlobal: PropTypes.func.isRequired,
+	estadoGlobal: PropTypes.shape({
+		hamburguesas: PropTypes.array.isRequired,
+		precios: PropTypes.shape({
+			pan1: PropTypes.string.isRequired,
+			lechuga: PropTypes.string.isRequired,
+			queso: PropTypes.string.isRequired,
+			carne: PropTypes.string.isRequired,
+			pan2: PropTypes.string.isRequired
+		})
+	})
 };
 
 export default Precios;
