@@ -35,7 +35,7 @@
 
 #### OBJETIVOS
 
-1. Vas a necesitar un `estadoGlobal` que vas a pasar a la mayoría o a todos los componentes; tambien la función para actualizarla.
+1. Vas a necesitar un `estadoGlobal` que vas a pasar a la mayoría o a todos los componentes; tambien la función para actualizarlo.
 
 2. Usar `react-router-dom` para navegar entre precios, cotizador e instrucciones.
 <img src="./public/1.gif">
@@ -61,4 +61,6 @@
 
 10. Se pueden usar todas las [buenas prácticas](../../BuenasPracticas) que hemos visto.
 
-11. En dado caso que no hayas completado el reto, ve, analiza, entiende y practica con el resultado que puedes encontrar en esta misma carpeta.
+11. Hay muchas otra validaciones que se pueden hacer, pero con las mencionadas es suficiente.
+
+12. En dado caso que no hayas completado el reto, ve, analiza, entiende y practica con el resultado que puedes encontrar en esta misma carpeta.
