@@ -6,7 +6,6 @@
 
 #### ORGANIZACION DE LA CLASE
 - PWA.
-- Responsividad.
 - Como descargarla.
 
 #### EJEMPLOS
