@@ -24,13 +24,13 @@
 7. Abre [localhost:5000](http://localhost:5000/) y verás la app corriendo como si fuera producción.
 
 8. Para demostrar que el `service worker` esta activo y funcionando, abrimos la consola del navegador y vamos a la pestaña de `Application`. Ahí vamos a ver nuestro `service worker` registrado y corriendo.
-<img src="./img/1.png" width="200">
+<img src="./img/1.png" width="500">
 
 9. Como también configuramos que funcione sin internet, podemos simular esto en la consola de igual forma. Le damos click a `offline` en la consola del navegador y recargamos.
-<img src="./img/2.png" width="200">
+<img src="./img/2.png" width="500">
 
 10. Si vamos a la consola, podemos ver que esta precargando lo que tiene en `cache` y hasta el último nos esta diciendo que esta en modo `offline`.
-<img src="./img/3.png" width="200">
+<img src="./img/3.png" width="500">
 
 11. Regresa al paso 9 y quítale el modo `offline`.
 
@@ -41,20 +41,20 @@
 14. Repite los pasos 5 (`npm run build`) y 6 (`npx serve -s build`).
 
 15. ¿Por qué no se esta actualizando y nos muestra la versión pasada? Porque como el `service worker` esta guardado en cache, esta mostrando la versión pasada. Incluso en la misma consola nos esta diciendo que tiene una nueva versión y que necesitamos recargar la página.
-<img src="./img/4.png" width="200">
+<img src="./img/4.png" width="500">
 
 16. Para resolver esto, habilitamos la actualización al recargar.
-<img src="./img/5.png" width="200">
+<img src="./img/5.png" width="500">
 
 17. Y ahora la mejor parte de las PWA, instalación en todos los dispositivos.
 
 18. A simple vista, la manera de identificar si un sitio web es una PWA es ver si se puede instalar o no. Esto podemos verlo hasta el final del url. Si aparece un signo de `+` es porque es una PWA.
-<img src="./img/6.png" width="200">
+<img src="./img/6.png" width="500">
 
 19. Instala la app y verás que ahora estará en la computadora como si fuera una aplicación de escritorio. Increible.
 
 20. Para desinstalarla sigue los siguientes pasos:
-<img src="./img/7.png" width="200">
+<img src="./img/7.png" width="500">
 
 21. También se puede instalar en [Android](https://www.youtube.com/watch?v=kUsqZ9NYB2Y) y [IOS](https://www.youtube.com/watch?v=qtrRqzbXFtE).
 
@@ -66,5 +66,5 @@
 <img src="./img/8.gif">
 
 25. Abre el url de la app y listo.
-<img src="./img/9.png" width="200">
+<img src="./img/9.png" width="500">
 
