@@ -59,6 +59,8 @@ Sin embargo, hay una trampa. El estado no se puede cambiar, lo que significa que
 >
 >La forma como manejamos eventos en React es muy parecida a la forma en como los manejamos sobre el DOM.
 
+**A continuación veremos cómo manejamos eventos en ReaJavaScriptct:**
+
 ```js
 <div onclick="handleClick()">click me</div>
 function handleClick() {
@@ -99,7 +101,7 @@ Si tenemos que usar un evento que no está en este listado de eventos, lo tendr�
 
 **Por último revisa los conceptos de:**
 
-1. (Renderizado condicional)[https://es.reactjs.org/docs/conditional-rendering.html]
-2. (Renderizado de elemento)[https://es.reactjs.org/docs/rendering-elements.html]
+1. [Renderizado condicional](https://es.reactjs.org/docs/conditional-rendering.html)
+2. [Renderizado de elemento](https://es.reactjs.org/docs/rendering-elements.html)
 3. Leer la seccion de ["React solo actualiza lo que es necesario"](https://es.reactjs.org/docs/rendering-elements.html#react-only-updates-whats-necessary), esto es porque el virtual DOM es tan rápido; sabe que y cuando cambiar componentes.
 
