@@ -64,7 +64,9 @@ En **2013**, **Pete Hunt** presentó React como solo la vista (V) en el modelo M
 
 >Hi, my name is [Sergei](http://sviridovserg.com) I love delivering great product to the customer and help teams to grow! I'm using GitHub a lot. It is hard to embed Youtube video to GitHub markdown when you adding comment to pull request on GitHub or changing markdown files. So, I created this simple tool that converts Youtube video URI to the embeddable markup that can be simply copy-pasted to GitHub.
 
-**React** está basado en un paradigma llamado **programación orientada a componentes** en el que cada componente es una pieza con la que el usuario puede interactuar. Estas piezas se crean usando una sintaxis llamada JSX.
+>❗ **Importante:**
+>
+>**React** está basado en un paradigma llamado **programación orientada a componentes** en el que cada componente es una pieza con la que el usuario puede interactuar. Estas piezas se crean usando una sintaxis llamada JSX.
 
 ### ¿Qué es JSX?
 
