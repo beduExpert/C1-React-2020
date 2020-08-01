@@ -78,7 +78,7 @@ En **2013**, **Pete Hunt** presentó React como solo la vista (V) en el modelo M
 
 No es obligatorio usar JSX, se pueden implementar usando código JavaScript regular, con la **desventaja** que el código resultante es más difícil de entender para los desarrolladores.
 
-Debido a que los navegadores web no entienden el código escrito en JSX, se hace necesario usar un traductor para convertirlo a código JavaScript regular y este traductor es [Babel](https://babeljs.io) , un compilador para la nueva generación de JavaScript que precisamente puede realizar dicha traducción.
+Debido a que los navegadores web no entienden el código escrito en JSX, se hace necesario usar un traductor para convertirlo a código JavaScript regular y este traductor es [**Babel**](https://babeljs.io) , un compilador para la nueva generación de JavaScript que precisamente puede realizar dicha traducción.
 
 **En resumen** es una forma de escribir HTML en **JavaScript** con una sintaxis muy parecida a HTML que luego es transformada en la compilación. Cuando se presentó fue amada y odiada por igual. **¿HTML en JavaScript? ¡Qué abominación! ¿XML en JavaScript (parecía XML 😅)?**
 
@@ -249,7 +249,7 @@ class Navbar extends React.Component{
 
 **Recursos:**
 
-1. [¿Qué es React?](https://es.reactjs.org/)
-2. [Introduccion a JSX](https://es.reactjs.org/docs/introducing-jsx.html).
-3. [Renderizando elementos](https://es.reactjs.org/docs/rendering-elements.html)
-4. [Componentes y propiedades](https://es.reactjs.org/docs/components-and-props.html)
+1. [**¿Qué es React?**](https://es.reactjs.org/)
+2. [**Introduccion a JSX**](https://es.reactjs.org/docs/introducing-jsx.html).
+3. [**Renderizando elementos**](https://es.reactjs.org/docs/rendering-elements.html)
+4. [**Componentes y propiedades**](https://es.reactjs.org/docs/components-and-props.html)

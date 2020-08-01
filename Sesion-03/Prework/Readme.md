@@ -12,7 +12,7 @@ Se llama ciclo de vida al tiempo que pasa desde que un objeto **se crea** desde 
 
 A estos métodos se les llama métodos del ciclo de vida. Algunos **métodos del ciclo de vida** que ya conocemos son el **constructor()**, que se ejecuta, solo una vez, cuando se crea el componente, y **render()**, que sabemos que se ejecuta en algún momento después de crearse y cada vez que cambia el estado.
 
-**Podemos clasificar los métodos del [ciclo de vida](https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/) en tres tipos:**
+**Podemos clasificar los métodos del [**ciclo de vida**](https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/) en tres tipos:**
 
 + **De montaje:** Los que se ejecutan en la fase de creación del componente.
 + **De actualización:** Los que se ejecutan mientras el componente vive.
@@ -62,8 +62,8 @@ Este método no se llama cuando se llama a **forceUpdate().**
 
 **Recursos:**
 
-1. ["Estado y ciclo de vida"](https://es.reactjs.org/docs/state-and-lifecycle.html).
+1. [**Estado y ciclo de vida**](https://es.reactjs.org/docs/state-and-lifecycle.html).
 
-2. ["Manejando eventos"](https://es.reactjs.org/docs/handling-events.html).
+2. [**Manejando eventos**](https://es.reactjs.org/docs/handling-events.html).
 
-3. ["Listas y keys"](https://es.reactjs.org/docs/lists-and-keys.html).
+3. [**Listas y keys**](https://es.reactjs.org/docs/lists-and-keys.html).

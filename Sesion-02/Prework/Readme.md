@@ -95,13 +95,13 @@ Los **eventos sintéticos** son una envoltura de los **eventos nativos del naveg
 
 ## Eventos disponibles
 
-React incluye eventos de teclado como onKeyUp, onKeyPress, onKeyDown; de mouse como onClick, onMouseMove, onDragOut, onDrop, etc.; de formularios, como onChange, onInput, onInvalid, onSubmit; y muchos más eventos que puedes ver en [React Docs](https://es.reactjs.org/docs/handling-events.html).
+React incluye eventos de teclado como onKeyUp, onKeyPress, onKeyDown; de mouse como onClick, onMouseMove, onDragOut, onDrop, etc.; de formularios, como onChange, onInput, onInvalid, onSubmit; y muchos más eventos que puedes ver en [**React** Docs](https://es.reactjs.org/docs/handling-events.html).
 
 Si tenemos que usar un evento que no está en este listado de eventos, lo tendríamos que hacer de la manera como lo haríamos sin React. Registrando el evento desde el DOM o con JavaScript usando **addEventListener**. Con React generalmente no necesitas llamar este método para agregar un evento al DOM después que el elemento es creado. Mejor, el evento se puede agregar al elemento cuando este es instanciado.
 
 **Por último revisa los conceptos de:**
 
-1. [Renderizado condicional](https://es.reactjs.org/docs/conditional-rendering.html)
-2. [Renderizado de elemento](https://es.reactjs.org/docs/rendering-elements.html)
-3. Leer la seccion de ["React solo actualiza lo que es necesario"](https://es.reactjs.org/docs/rendering-elements.html#react-only-updates-whats-necessary), esto es porque el virtual DOM es tan rápido; sabe que y cuando cambiar componentes.
+1. [**Renderizado condicional**](https://es.reactjs.org/docs/conditional-rendering.html)
+2. [**Renderizado de elemento**](https://es.reactjs.org/docs/rendering-elements.html)
+3. Leer la seccion de [R**eact solo actualiza lo que es necesario**](https://es.reactjs.org/docs/rendering-elements.html#react-only-updates-whats-necessary), esto es porque el virtual DOM es tan rápido; sabe que y cuando cambiar componentes.
 
