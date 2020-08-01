@@ -60,7 +60,9 @@ En **2013**, **Pete Hunt** presentó React como solo la vista (V) en el modelo M
 + **Virtual DOM** para optimizar las actualizaciones del DOM
 + **JSX** para escribir el marcado dentro de JavaScript con una sintaxis sencilla en que incluso los diseñadores web puedan contribuir porque es casi idéntico a HTML.
 
-[![](http://img.youtube.com/vi/x7cQ3mrcKaY/0.jpg)](http://www.youtube.com/watch?v=x7cQ3mrcKaY "https://miro.medium.com/max/2400/0*p4oHn_Px5DokmoAr.png")
+**A continuación te dejamos un video con el lanzamiento de React**
+
+[![](http://img.youtube.com/vi/x7cQ3mrcKaY/0.jpg)](http://www.youtube.com/watch?v=x7cQ3mrcKaY "http://img.youtube.com/vi/x7cQ3mrcKaY/0.jpg")
 
 >Hi, my name is [Sergei](http://sviridovserg.com) I love delivering great product to the customer and help teams to grow! I'm using GitHub a lot. It is hard to embed Youtube video to GitHub markdown when you adding comment to pull request on GitHub or changing markdown files. So, I created this simple tool that converts Youtube video URI to the embeddable markup that can be simply copy-pasted to GitHub.
 
@@ -233,6 +235,8 @@ class Navbar extends React.Component{
 ```
 
 > **Recurda**
+>
+>React es:
 >
 >![](./react.png)
 
