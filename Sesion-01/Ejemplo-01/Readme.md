@@ -1,4 +1,4 @@
-[`React Fundamentals`](../../README.md) > [`Sesión 01: Fundamentos de React`](../README.md) > `Ejemplo 1`
+[`React Fundamentals`](../../README.md) > [`Sesión 01: Fundamentos de React`](../Readme.md) > `Ejemplo 1`
 
 ## Techo del cielo
 
