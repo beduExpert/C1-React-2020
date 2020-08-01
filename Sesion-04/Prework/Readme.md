@@ -40,7 +40,7 @@ Además del hook de **manejo de estado**, React tiene otros hooks entre los que 
 + useContext
 + useReducer
 
-Entre muchos otros que puedes encontrar [aquí](https://reactjs.org/docs/hooks-reference.html):
+Entre muchos otros que puedes encontrar [**aquí**](https://reactjs.org/docs/hooks-reference.html):
 
 ## El hook de estado: useState
 
@@ -69,7 +69,8 @@ Puedes añadir tantos **useState()** como quieras, cada uno de ellos para una **
 La única **condición** es que se llame desde un nivel **superior** de **código**, no en un **bloque**.
 Es importante saber que cuando **llamamos** a la **función** set de un **useState**(), se **sobrescribe** el contenido de la variable.
 
+**Recursos:**
 
-1. Leer el artículo ["Presentando Hooks"](https://es.reactjs.org/docs/hooks-intro.html).
+1. [**Presentando Hooks**](https://es.reactjs.org/docs/hooks-intro.html).
 
-2. Leer el artículo ["Usando el Hook de estado"](https://es.reactjs.org/docs/hooks-state.html).
+2. [**Usando el Hook de estado**](https://es.reactjs.org/docs/hooks-state.html).
