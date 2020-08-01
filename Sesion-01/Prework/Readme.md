@@ -232,12 +232,16 @@ class Navbar extends React.Component{
 }
 ```
 
+> **Recurda**
+>
+>![](./react.png)
+
 
 >💡 **Nota:**
 >
 >Recuerda que la documentación oficial va a ser tu mejor amiga, por eso al final de tu prework podras ver recursos de los temas vistos anteriormente.
 
 1. [React es](https://es.reactjs.org/):
-![](./react.png)
+
 
 2. Leer el artículo de [introduccion a JSX](https://es.reactjs.org/docs/introducing-jsx.html).
