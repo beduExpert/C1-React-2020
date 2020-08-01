@@ -9,7 +9,7 @@
 
 ## 🛠 Prework
 
-**Objetivo**
+**Objetivo: **
 
 - Saber como vivíamos antes de React.js
 - Saber que es react
