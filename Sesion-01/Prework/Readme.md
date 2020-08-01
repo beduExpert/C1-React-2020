@@ -10,7 +10,7 @@ La web tradicionalmente se ha construido en **HTML**, **JavaScript** y **CSS**, 
 
 **Ejemplo:**
 
-![](./img/1.png)
+<img src="./img/1.png" width="500">
 
 **La web está construida con 3 lenguajes básicos:**
 
@@ -28,7 +28,7 @@ Pueden tener otros nombres pero esos son los más comunes y para nosotros esta s
 
 ### Pero .. ¿Por qué no separar HTML CSS y JavaScript y dejarlos juntos?
 
-![](./img/2.png)
+<img src="./img/2.png" width="500">
 
 Un día llegó el equipo de React y propuso meter todo en un solo paquete llamado **componente**, y de seguro estas pensando **"Esto va contra las buenas prácticas"** parece que intentan regresar a los años 90 cuando en el mismo HTML metemos el CSS y JavaScript. **¿Por qué lo proponen?** Al guardar estos lenguajes en carpetas, estas separando por **código** y no por **funcionalidad**.
 
@@ -44,7 +44,7 @@ Es una **arquitectura** de **software** que permite organizar las partes de una 
 + **Vista**. La interfaz con la que interactúa el usuario con los datos entregados por el modelo.
 + **Controlador**. La lógica de negocio, lo que debe hacer la aplicación. El controlador es una especie de puente entre la vista y el modelo.
 
-![](./img/3.png)
+<img src="./img/3.png" width="650">
 
 ### Y a todo esto…. ¿Qué es React?
 
@@ -138,7 +138,7 @@ Pero antes de nada, si hay un Virtual DOM tendrá que haber algo real, **¿no?**
 
 EL DOM posee una estructura en forma de árbol:
 
-![](./img/5.png)
+<img src="./img/11.png" width="500">
 
 Esto provoca que cada vez que modificamos un elemento dentro de él, todos sus hijos tengan que ser **pintados de nuevo (hayan o no cambiado).** Y justo este proceso es el que provoca los problemas de rendimiento, ya que de por sí renderizar **elementos en una interfaz gráfica** es una tarea costosa. Por tanto, cuantos más elementos queden por debajo de nuestro elemento modificado en la estructura del DOM más elementos tendrán que ser vueltos a pintar en la interfaz gráfica. Y es aquí donde entra el concepto del Virtual DOM con el objetivo de conseguir **optimizar esta tarea**.
 
@@ -146,11 +146,11 @@ Esto provoca que cada vez que modificamos un elemento dentro de él, todos sus h
 
 **Virtual DOM** es una representación en memoria del **DOM real** que actúa de intermediario entre el estado de la aplicación y el **DOM** de la interfaz gráfica que está viendo el usuario.
 
-![](./img/6.png)
+<img src="./img/9.jpg" width="500">
 
 Puesto que cada elemento es un nodo en el árbol del DOM, cada vez que se produce un cambio en cualquiera de estos elementos (o un nuevo elemento es añadido) se genera un nuevo Virtual DOM con el **árbol resultante.** Dado que este **DOM es virtual**, la interfaz gráfica aún no es actualizada, sino que se compara el DOM real con este DOM virtual con el objetivo de calcular la forma más óptima de realizar los cambios (es decir, de **renderizar** los **menos** cambios posibles). De este modo se consigue reducir el coste en términos de rendimiento de actualizar el DOM real.
 
-![](./img/7.png)
+<img src="./img/7.png" width="500">
 
 **State Change.** En este primer paso, se produce un cambio en el estado del nodo de color de rojo, lo cual provoca que se genere en memoria un Virtual DOM con el árbol resultante tras ese cambio.
 **Compute diff.** A continuación se realiza la comparación entre el árbol del Virtual DOM y el del navegador (DOM real) con el fin de detectar los cambios producidos. **Cómo ves, el cambio afecta a toda la rama descendiente del nodo cuyo estado cambió.**
@@ -167,13 +167,13 @@ Es también una de las **diferencias** importantes con uno de los frameworks má
 
 En la imagen siguiente se puede ver una comparativa entre el framework de Google y la librería de Facebook:
 
-![](./img/8.png)
+<img src="./img/8.png" width="500">
 
 ### ¿Qué es la arquitectura basada en componentes y qué ventajas aporta?
 
 Vamos a construir interfaces de usuario **(UI)** utilizando componentes reutilizables, que **poseen** y **manejan** un **estado propio**. Usamos estos componentes como si fueran **bloques de Lego**, para construir **componentes** más complejos y eventualmente una **aplicación entera.**
 
-![](./img/9.png)
+<img src="./img/9.png" width="500">
 
 >💡 **Nota:**
 >
@@ -192,7 +192,7 @@ React.js separa tu código en pequeñas partes llamadas **Componentes** que pued
 
 **Esta es la interfaz de BEDU**
 
-![](./img/10.png)
+<img src="./img/10.png" width="450">
 
 Cada elemento de esta página (**logo, icono de búsqueda, carrito, icono de menú, texto, botones**, etc) es un bloque de interfaz. La filosofía de React.js es separar el proyecto por piezas de tal manera que el código pueda ser reutilizable, por ejemplo, si yo necesito otro botón, s**implemente reutilizó el componente que genera el botón**.
 
@@ -245,7 +245,9 @@ class Navbar extends React.Component{
 >
 >Recuerda que la documentación oficial va a ser tu mejor amiga, por eso al final de tu prework podras ver recursos de los temas vistos anteriormente.
 
-1. [React es](https://es.reactjs.org/):
+**Recursos: **
+
+1. [¿Qué es React?](https://es.reactjs.org/):
 
 
-2. Leer el artículo de [introduccion a JSX](https://es.reactjs.org/docs/introducing-jsx.html).
+2. [Introduccion a JSX](https://es.reactjs.org/docs/introducing-jsx.html).
