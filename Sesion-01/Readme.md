@@ -1,4 +1,4 @@
-# Sesión 01 - Consola
+# Sesión 01 - Fundamentos de React
 
 🎯 **Objetivo:**
 - Entender la diferencia entre HTML y JSX.
