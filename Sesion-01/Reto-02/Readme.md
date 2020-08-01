@@ -1,3 +1,5 @@
+[`Backend Fundamentals`](../../README.md) > [`Sesión 01: Consola`](../Readme.md) >[`Ejemplo-02`](../Ejemplo-02) > `Reto 2`
+
 ## ¡Yo me lo llevo!
 
 ### OBJETIVO 
@@ -20,3 +22,6 @@
 <img src="./public/resultado.png" width="400">
 
 5. Esperar a ver que tía se llevó el centro de mesa.
+
+
+[`Atrás`](../Ejemplo-01)
