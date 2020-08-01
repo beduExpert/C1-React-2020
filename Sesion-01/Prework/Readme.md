@@ -138,7 +138,7 @@ Pero antes de nada, si hay un Virtual DOM tendrá que haber algo real, **¿no?**
 
 EL DOM posee una estructura en forma de árbol:
 
-<img src="./img/11.png" width="500">
+<img src="./img/12.png" width="500">
 
 Esto provoca que cada vez que modificamos un elemento dentro de él, todos sus hijos tengan que ser **pintados de nuevo (hayan o no cambiado).** Y justo este proceso es el que provoca los problemas de rendimiento, ya que de por sí renderizar **elementos en una interfaz gráfica** es una tarea costosa. Por tanto, cuantos más elementos queden por debajo de nuestro elemento modificado en la estructura del DOM más elementos tendrán que ser vueltos a pintar en la interfaz gráfica. Y es aquí donde entra el concepto del Virtual DOM con el objetivo de conseguir **optimizar esta tarea**.
 
@@ -150,7 +150,7 @@ Esto provoca que cada vez que modificamos un elemento dentro de él, todos sus h
 
 Puesto que cada elemento es un nodo en el árbol del DOM, cada vez que se produce un cambio en cualquiera de estos elementos (o un nuevo elemento es añadido) se genera un nuevo Virtual DOM con el **árbol resultante.** Dado que este **DOM es virtual**, la interfaz gráfica aún no es actualizada, sino que se compara el DOM real con este DOM virtual con el objetivo de calcular la forma más óptima de realizar los cambios (es decir, de **renderizar** los **menos** cambios posibles). De este modo se consigue reducir el coste en términos de rendimiento de actualizar el DOM real.
 
-<img src="./img/7.png" width="500">
+<img src="./img/7.png" width="450">
 
 **State Change.** En este primer paso, se produce un cambio en el estado del nodo de color de rojo, lo cual provoca que se genere en memoria un Virtual DOM con el árbol resultante tras ese cambio.
 **Compute diff.** A continuación se realiza la comparación entre el árbol del Virtual DOM y el del navegador (DOM real) con el fin de detectar los cambios producidos. **Cómo ves, el cambio afecta a toda la rama descendiente del nodo cuyo estado cambió.**
@@ -192,7 +192,7 @@ React.js separa tu código en pequeñas partes llamadas **Componentes** que pued
 
 **Esta es la interfaz de BEDU**
 
-<img src="./img/10.png" width="450">
+<img src="./img/10.png" width="400">
 
 Cada elemento de esta página (**logo, icono de búsqueda, carrito, icono de menú, texto, botones**, etc) es un bloque de interfaz. La filosofía de React.js es separar el proyecto por piezas de tal manera que el código pueda ser reutilizable, por ejemplo, si yo necesito otro botón, s**implemente reutilizó el componente que genera el botón**.
 
@@ -247,7 +247,7 @@ class Navbar extends React.Component{
 
 **Recursos: **
 
-1. [¿Qué es React?](https://es.reactjs.org/):
-
-
+1. [¿Qué es React?](https://es.reactjs.org/)
 2. [Introduccion a JSX](https://es.reactjs.org/docs/introducing-jsx.html).
+3. [Renderizando elementos](https://es.reactjs.org/docs/rendering-elements.html)
+4. [Componentes y propiedades](https://es.reactjs.org/docs/components-and-props.html)
