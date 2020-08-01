@@ -1,6 +1,8 @@
 ### OBJETIVO
 - Conocer qué es **React**.
-- Leer sobre qué es **JSX** y como es su **sintaxis**.
+- Leer sobre qué es **JSX** y como es su
+**sintaxis**.
+- Entender el **virtual DOM**.
 
 ## Sesión 01
 
