@@ -60,7 +60,7 @@ En **2013**, **Pete Hunt** presentó React como solo la vista (V) en el modelo M
 + **Virtual DOM** para optimizar las actualizaciones del DOM
 + **JSX** para escribir el marcado dentro de JavaScript con una sintaxis sencilla en que incluso los diseñadores web puedan contribuir porque es casi idéntico a HTML.
 
-**A continuación te dejamos un video con el lanzamiento de React**
+**A continuación te dejamos el video del lanzamiento de React**
 
 [![](http://img.youtube.com/vi/x7cQ3mrcKaY/0.jpg)](http://www.youtube.com/watch?v=x7cQ3mrcKaY "http://img.youtube.com/vi/x7cQ3mrcKaY/0.jpg")
 
