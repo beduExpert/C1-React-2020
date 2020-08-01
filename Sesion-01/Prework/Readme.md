@@ -60,10 +60,8 @@ En **2013**, **Pete Hunt** presentó React como solo la vista (V) en el modelo M
 + **Virtual DOM** para optimizar las actualizaciones del DOM
 + **JSX** para escribir el marcado dentro de JavaScript con una sintaxis sencilla en que incluso los diseñadores web puedan contribuir porque es casi idéntico a HTML.
 
-<video controls>
+[![](http://img.youtube.com/vi/x7cQ3mrcKaY/0.jpg)](http://www.youtube.com/watch?v=x7cQ3mrcKaY "https://miro.medium.com/max/2400/0*p4oHn_Px5DokmoAr.png")
 
-<source src="https://www.youtube.com/embed/x7cQ3mrcKaY" type="video/mp4">
-</video >
 
 **React** está basado en un paradigma llamado **programación orientada a componentes** en el que cada componente es una pieza con la que el usuario puede interactuar. Estas piezas se crean usando una sintaxis llamada JSX.
 
@@ -232,7 +230,9 @@ class Navbar extends React.Component{
 ```
 
 
-#### Enlaces de Documentación
+>💡 **Nota:**
+>
+>Recuerda que la documentación oficial va a ser tu mejor amiga, por eso al final de tu prework podras ver recursos de los temas vistos anteriormente.
 
 1. [React es](https://es.reactjs.org/):
 ![](./react.png)
