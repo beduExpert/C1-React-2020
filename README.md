@@ -1,5 +1,7 @@
 # React Fundamentals 2020
 
+![](https://miro.medium.com/max/3600/1*HSisLuifMO6KbLfPOKtLow.jpeg)
+
 ## 🎯 Objetivos:
 
 + **Construir** interfaces de usuario declarativas para la **web** con React.
@@ -11,7 +13,7 @@ Es recomendable que tengas los siguientes **conocimientos.**
 - **Programación Orientada a Objetos.**
 - **Javascript** o conocimiento de algún **lenguaje de programación.**
 
-### ORGANIZACIÓN DE MÓDULO
+## 📋 Temario
 
 - [`Sesión 1 - Fundamentos de React`](Sesion-01/)
 
