@@ -60,7 +60,10 @@ En **2013**, **Pete Hunt** presentó React como solo la vista (V) en el modelo M
 + **Virtual DOM** para optimizar las actualizaciones del DOM
 + **JSX** para escribir el marcado dentro de JavaScript con una sintaxis sencilla en que incluso los diseñadores web puedan contribuir porque es casi idéntico a HTML.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/x7cQ3mrcKaY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<video controls>
+
+<source src="https://www.youtube.com/embed/x7cQ3mrcKaY" type="video/mp4">
+</video >
 
 **React** está basado en un paradigma llamado **programación orientada a componentes** en el que cada componente es una pieza con la que el usuario puede interactuar. Estas piezas se crean usando una sintaxis llamada JSX.
 
@@ -186,7 +189,7 @@ React.js separa tu código en pequeñas partes llamadas **Componentes** que pued
 
 **Esta es la interfaz de BEDU**
 
-![](./img/9.png)
+![](./img/10.png)
 
 Cada elemento de esta página (**logo, icono de búsqueda, carrito, icono de menú, texto, botones**, etc) es un bloque de interfaz. La filosofía de React.js es separar el proyecto por piezas de tal manera que el código pueda ser reutilizable, por ejemplo, si yo necesito otro botón, s**implemente reutilizó el componente que genera el botón**.
 
