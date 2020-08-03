@@ -1,6 +1,8 @@
+[`Backend Fundamentals`](../../README.md) > [`Estado (state) y Propiedades (props)`](../Readme.md) > `Prework`
+
 ### OBJETIVO
-- Introducción de componentes stateful (clase).
-- Cómo declarar, mandar y usar valores para usarse como propiedades.
+- Introducción de **componentes stateful (clase)**.
+- Cómo **declarar**, **mandar** y usar **valores** para usarse como **propiedades**.
 
 #### DESARROLLO
 
