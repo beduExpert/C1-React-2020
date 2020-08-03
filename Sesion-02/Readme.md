@@ -2,11 +2,11 @@
 
 🎯 **Objetivos:**
 
-- Introducción de **componentes stateful (clase)**.
-- Entender la diferencia entre **componentes stateless (funcionales)** y **stateful (clase)**.
-- Cómo **declarar** y usar el estado en **componente stateful**.
-- Cómo **declarar**, **mandar** y usar **valores** para usarse como **propiedades**.
-- Entender el **virtual DOM**.
++ Introducción de **componentes stateful (clase)**.
++ Entender la diferencia entre **componentes stateless (funcionales)** y **stateful (clase)**.
++ Cómo **declarar** y usar el estado en **componente stateful**.
++ Cómo **declarar**, **mandar** y usar **valores** para usarse como **propiedades**.
++ Entender el **virtual DOM**.
 
 ### Secciones:
 
@@ -14,9 +14,9 @@
 
 **Objetivos:**
 
-- Saber que son las **Props (Propiedades)**
-- Conocer que es el **Estado (State)**
-- Saber que es **this.state**
++ Saber que son las **Props (Propiedades)**
++ Conocer que es el **Estado (State)**
++ Saber que es **this.state**
 
 **¿Qué son las Props (Propiedades)?**
 
@@ -24,15 +24,14 @@ Las propiedades son la manera que tienen los componentes de React de comunicarse
 
 ## 🕵 Ejemplos:
 
-- [`Ejemplo 01: Patricio`](Ejemplo-01)
++ [`Ejemplo 01: Patricio`](Ejemplo-01)
 
-- [`Ejemplo 02: Gracias Abuelo`](Ejemplo-02)
++ [`Ejemplo 02: Gracias Abuelo`](Ejemplo-02)
 
 ## 💻 Retos:
++ [`Reto 01: Tía Socorro ganó`](Reto-01)
 
-- [`Reto 01: Tía Socorro ganó`](Reto-01)
-
-- [`Reto 02: Cada quien su mantel`](Reto-02)
++ [`Reto 02: Cada quien su mantel`](Reto-02)
 
 ## 🛡 Postwork
 
