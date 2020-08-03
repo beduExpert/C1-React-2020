@@ -38,11 +38,11 @@ Las propiedades son la manera que tienen los componentes de React de comunicarse
 **Mejorando el reto cada quien su mantel**...[`leer más`](Postwork/)
 
 ## ⚛  ORGANIZACION DE LA CLASE 
-- Componentes stateless (funcionales) VS stateful (clase).
-- Conversión de stateless a stateful y viceversa.
-- Cuándo y porqué usar cada componente.
-- Declaración y utilización de estado (state).
-- Declaración y utilización de propiedades (props) en los 2 tipos de componente
-- Buenas prácticas de propiedades (librería prop-types).
++ Componentes stateless (funcionales) VS stateful (clase).
++ Conversión de stateless a stateful y viceversa.
++ Cuándo y porqué usar cada componente.
++ Declaración y utilización de estado (state).
++ Declaración y utilización de propiedades (props) en los 2 tipos de componente
++ Buenas prácticas de propiedades (librería prop-types).
 
 ### 🎩 [Buenas prácticas para las propiedades (props)](../BuenasPracticas/PropTypes/Readme.md).
