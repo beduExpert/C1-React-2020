@@ -37,7 +37,7 @@ El componente se puede apoyar en este estado para interacciones, tanto por parte
 
 ## ¿Qué es this.state?
 
-Es una variable de class (disponible en toda la clase que usa esto) que necesita declarar e inicializar dentro del método del constructor de clases. React.js volverá a representar el DOM completo cada vez que actualice esa variable en particular.
+Es una **variable** de **class** (disponible en toda la clase que usa esto) que necesita declarar e inicializar dentro del método del constructor de clases. React.js volverá a representar el DOM completo cada vez que **actualice** esa **variable** en particular.
 
 Sin embargo, hay una trampa. El estado no se puede cambiar, lo que significa que no se puede editar, por lo que debemos anularlo mediante la función  **this.setState ()** que recibe el nuevo objeto de estado (que reemplaza al anterior).
 
