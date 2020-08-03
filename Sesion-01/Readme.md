@@ -18,7 +18,7 @@
 
 **¿Qué es react?**
 
-React también llamada ReactJS es una librería de JavaScript creada por Facebook y publicada como OpenSource, que se diseñó para ayudarnos a desarrollar aplicaciones SPA (Single Page Applications)..[`leer mas`](Prework)
+React también llamada ReactJS es una librería de JavaScript creada por Facebook y publicada como OpenSource, que se diseñó para ayudarnos a desarrollar aplicaciones SPA (Single Page Applications)...[`leer mas`](Prework)
 
 ## 🕵 Ejemplos:
 
