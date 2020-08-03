@@ -1,8 +1,10 @@
+[`React Fundamentals`](../../README.md) > [`Sesión 02: Estado (state) y Propiedades (props)`](../Readme.md) > `Ejemplo 2`
+
 ## Gracias Abuelo
 
 ### OBJETIVO 
-- Declaración y utilización de propiedades (props) en los 2 tipos de componente.
-- Buenas prácticas de propiedades (librería prop-types).
+- **Declaración** y **utilización de propiedades (props)** en los 2 tipos de componente.
+- **Buenas prácticas** de propiedades (librería prop-types).
 
 #### REQUISITOS 
 - Completar el [Ejemplo-01](../Ejemplo-01)
@@ -211,3 +213,5 @@ export default LuzMercurial;
 
 20. Resultado:
 <img src="./public/resultado.png" width="400">
+
+[`Siguiente: Reto-02`](../Reto-02)
