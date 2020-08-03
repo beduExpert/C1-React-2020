@@ -15,7 +15,7 @@ Es recomendable que tengas los siguientes **conocimientos.**
 
 ## 📋 Temario
 
-- [`Sesión 1 - Fundamentos de React`](Sesion-01/)
+- [`Sesión 01 - Fundamentos de React`](Sesion-01/)
 
 - [`Sesión 02 - Estado (state) y Propiedades (props)	`](Sesion-02)
 
