@@ -26,7 +26,7 @@ El componente se puede apoyar en este estado para interacciones, tanto por parte
  El estado puede ser de **dos tipos:**
 
 1. **Estado del componente**: Cada componente tiene su propio estado que no es compartido con otros, a excepción de sus componentes hijos.
-2. **Estado global de la aplicación**: La información del estado de todos los componentes, por medio de la cual estos pueden comunicarse.
+2. **Estado global de la aplicación**: La información del estado de todos los **componentes**, por medio de la cual estos pueden **comunicarse**.
 
 **Ejemplos muy sencillos de cambio de estado:**
 
