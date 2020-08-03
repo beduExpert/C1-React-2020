@@ -1,3 +1,5 @@
+[`React Fundamentals`](../../README.md) > [`Sesión 02: Estado (state) y Propiedades (props)`](../Readme.md) >[`Ejemplo-02`](../Ejemplo-01) > `Reto 2`
+
 ## Cada quien su mantel
 
 ### OBJETIVO
@@ -19,3 +21,5 @@
 
 4. Resultado:
 <img src="./public/resultado.png" width="400">
+
+[`Atrás`](../Ejemplo-02)
