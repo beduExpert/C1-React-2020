@@ -1,4 +1,4 @@
-[`Backend Fundamentals`](../../README.md) > [`Sesión 02: Estado (state) y Propiedades (props)`](../Readme.md) > `Postwork`
+[`React Fundamentals`](../../README.md) > [`Sesión 02: Estado (state) y Propiedades (props)`](../Readme.md) > `Postwork`
 
 #### REQUISITOS
 - Tener Node instalado.
