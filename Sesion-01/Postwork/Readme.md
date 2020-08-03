@@ -1,4 +1,4 @@
-[`Backend Fundamentals`](../../README.md) > [`Sesión 01: Fundamentos de React`](../Readme.md) > `Prework`
+[`Backend Fundamentals`](../../README.md) > [`Sesión 01: Fundamentos de React`](../Readme.md) > `Postwork`
 
 #### REQUISITOS
 - Tener Node instalado.
