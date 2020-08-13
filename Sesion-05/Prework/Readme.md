@@ -20,7 +20,7 @@ Con el hook de `React useEffect` podemos especificar cuando queremos que un cód
 + Sólo una vez
 + Sólo cada vez que cambie una (o más) variables en concreto
 
-<img src="./img/r1.png" width="300">
+<img src="./img/r1.png" width="450>
 
 En lugar de ejecutarse a cada renderizado de nuestro componente
 
@@ -30,7 +30,7 @@ En lugar de ejecutarse a cada renderizado de nuestro componente
   + componentDidUpdate
   + componentWillUnmount.
 
-  <img src="./img/r2.png" width="350">
+  <img src="./img/r2.png" width="500">
 
 ## Para qué es útil el useEffect
 
@@ -88,7 +88,7 @@ Y aquí puedes ver como el `console.log` sólo se ejecuta una única vez, y aunq
 
 Esto es así porque hemos encapsulado el código dentro de un `useEffect`, pero...
 
-## ¿cómo funciona `useEffect`?**
+## ¿cómo funciona `useEffect` ?
 
 + La función se especifica de la siguiente manera
 
