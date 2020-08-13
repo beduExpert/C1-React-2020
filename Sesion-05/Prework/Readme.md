@@ -20,7 +20,7 @@ Con el hook de `React useEffect` podemos especificar cuando queremos que un cód
 + Sólo una vez
 + Sólo cada vez que cambie una (o más) variables en concreto
 
-<img src="./img/r1.png" width="450>
+<img src="./img/r1.png" width="450">
 
 En lugar de ejecutarse a cada renderizado de nuestro componente
 
