@@ -14,7 +14,7 @@
 
 + Convertir los **3 ciclos de vida a hooks.**
 
-**Repasando ¿Qué son los hooks? y ¿que es useEffect**
+**Repasando ¿Qué son los hooks? y ¿que es useEffect?**
 
 Los Hooks son una **API** que nos permite usar estado y otras características en un componente funcional...[`leer mas`](Prework)
 
