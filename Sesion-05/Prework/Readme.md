@@ -5,7 +5,7 @@
 
 #### DESARROLLO
 
-> 💡 **Recurda:**
+> 💡 **Recuerda:**
 
 Los **Hooks** son una **API** que nos permite usar **estado** y otras características en un **componente funcional.**
 
