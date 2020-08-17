@@ -3,6 +3,8 @@
 
 #### DESARROLLO
 
+## React Router
+
 Seguramente habrás escuchado sobre [React Router](https://reactrouter.com) y si no es así el día de hoy vas aprender a trabajar con esta librería la cual nos ayuda con el manejo de rutas en nuestra aplicación.
 
 Al día de hoy React Router se puede trabajar tanto para web como para móvil, siendo `react-router-dom` para web y `react-router-native` para móvil.
