@@ -20,8 +20,6 @@ Con el hook de `React useEffect` podemos especificar cuando queremos que un cód
 + Sólo una vez
 + Sólo cada vez que cambie una (o más) variables en concreto
 
-<img src="./img/r1.png" width="450">
-
 En lugar de ejecutarse a cada renderizado de nuestro componente
 
 + `useEffect`  nos permite ejecutar un efecto secundario cuando se modifica una prop o un estado de useState.
