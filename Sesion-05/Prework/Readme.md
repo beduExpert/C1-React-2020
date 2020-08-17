@@ -1,7 +1,7 @@
 ### OBJETIVO
-- Cambiar componentDidMount a hook.
-- Cambiar componentWillUnmount a hook.
-- Cambiar componentDidUpdate a hook.
+- Convertir componentDidMount a hook.
+- Convertir componentWillUnmount a hook.
+- Convertir componentDidUpdate a hook.
 
 #### DESARROLLO
 
