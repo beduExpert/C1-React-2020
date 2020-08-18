@@ -1,4 +1,4 @@
-[`React Fundamentals`](../../README.md) > [`Sesión 05: Sesión 05: Hooks y useEffect`](../Readme.md) > `Ejemplo 1`
+[`React Fundamentals`](../../README.md) > [`Sesión 05: Hooks y useEffect`](../Readme.md) > `Ejemplo 1`
 
 ## Capitán Garfio
 
