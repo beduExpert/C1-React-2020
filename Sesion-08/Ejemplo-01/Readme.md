@@ -1,4 +1,4 @@
-## Responsibilidad
+## App responsible
 
 ### OBJETIVO
 - Material UI
