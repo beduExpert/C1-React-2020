@@ -27,8 +27,8 @@ Seguramente habrás escuchado sobre React Router y si no es así el día de hoy 
 + [`Reto 02: Buscando a Memo`](Reto-02)
 
 ## 🛡 Postwork
-+ Completar el Reto-01.
-+ Completar el Reto-02....[`leer más`](Postwork/)
++ Completar el Reto-01
++ Completar el Reto-02...[`leer más`](Postwork/)
 
 #### ORGANIZACION DE LA CLASE
 - react router dom.
