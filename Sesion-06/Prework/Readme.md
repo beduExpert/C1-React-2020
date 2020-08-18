@@ -1,5 +1,5 @@
 ### OBJETIVO
-- react router dom.
+- Saber que es `react router dom`.
 
 #### DESARROLLO
 
