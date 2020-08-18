@@ -30,7 +30,7 @@ Seguramente habrás escuchado sobre React Router y si no es así el día de hoy 
 + Completar el Reto-01
 + Completar el Reto-02...[`leer más`](Postwork/)
 
-#### ORGANIZACION DE LA CLASE
+## ⚛ ORGANIZACION DE LA CLASE
 - react router dom.
 - Componente anchor (a).
 - Componente Link.
