@@ -28,6 +28,6 @@
 6. Mira la documentación oficial de [`<Grid />`](https://material-ui.com/api/grid/) por si necesitas.
 
 7. Resultado
-<img src="./public/resultado1.png" width="400">
+<img src="./public/resultado1.png">
 
 <img src="./public/resultado2.gif">
