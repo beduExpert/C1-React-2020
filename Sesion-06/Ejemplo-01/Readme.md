@@ -1,4 +1,4 @@
-[`React Fundamentals`](../../README.md) > [`Sesión 05: Rutas con react router dom`](../Readme.md) > `Ejemplo 1`
+[`React Fundamentals`](../../README.md) > [`Sesión 06: Rutas con react router dom`](../Readme.md) > `Ejemplo 1`
 
 ## Anatomía
 
