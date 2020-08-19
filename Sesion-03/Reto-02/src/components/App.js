@@ -32,7 +32,7 @@ class App extends React.Component {
 		const tareaYaExiste = this.state.listaTareas.find(
 			(existente) => existente === tareaEnEstado
 		);
-		if (tareaYaExiste) return alert(`Tarea "${tareaEnEstado}"" ya existe.`);
+		if (tareaYaExiste) return alert(`Tarea "${tareaEnEstado}" ya existe.`);
 
 		const listaActualizada = [
 			...this.state.listaTareas,

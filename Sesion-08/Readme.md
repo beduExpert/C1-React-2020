@@ -1,9 +1,10 @@
+## Sesión 08: Material UI
 
-## Sesión 08: Nombre de la sesión
+### OBJETIVOS
+- Usar los componentes reutilizables de material ui.
+- Implementar apps responsibles.
+- Crear formas.
 
-### OBJETIVOS 
-
-
-
-#### ORGANIZACION DE LA CLASE 
-
+#### ORGANIZACION DE LA CLASE
+- Navegar en el sitio de material ui.
+- Usar los componentes de material ui.
