@@ -3,6 +3,7 @@
 ### OBJETIVOS
 - Usar los componentes reutilizables de material ui.
 - Implementar apps responsibles.
+- Crear formas.
 
 #### ORGANIZACION DE LA CLASE
 - Navegar en el sitio de material ui.
