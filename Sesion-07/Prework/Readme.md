@@ -13,7 +13,7 @@
 
 **Pero, entonces qué son.**
 
-<img src="./img/pwa.png">
+<img src="./img/pwa.png" width="400">
 
 **PWA** o Progressive web apps (aplicaciones web progresivas), es un término que se da a una nueva generación de aplicaciones que incrementan su funcionalidad, conforme las capacidades del dispositivo en el que se ejecutan e incrementan, de ahí la palabra progresiva.
 
