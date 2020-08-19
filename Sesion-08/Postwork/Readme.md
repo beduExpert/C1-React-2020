@@ -15,4 +15,4 @@
 
 5. Puedes usar [useHistory](https://reactrouter.com/web/api/Hooks/usehistory) de `react-router-dom`.
 
-6. Resultado en [](https://friendly-archimedes-7ebe0d.netlify.app/)
+6. Resultado en https://friendly-archimedes-7ebe0d.netlify.app/
