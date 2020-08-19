@@ -1,5 +1,3 @@
-[`React Fundamentals`](../../README.md) > [`Sesión 07: Progressive web apps (PWA)`](../Readme.md) > `Ejemplo 1`
-
 ## Sesión 07: Progressive web apps (PWA)
 
 🎯 **Objetivos:**
