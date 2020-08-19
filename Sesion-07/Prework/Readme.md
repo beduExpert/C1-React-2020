@@ -13,7 +13,7 @@
 + No es parecido a React Native, Native Script, ionic, etc.
 + No es sólo Responsive Design
 
-**Pero, entonces qué son.**
+**Pero, entonces ...**
 
 <img src="./img/pwa.png" width="600">
 
