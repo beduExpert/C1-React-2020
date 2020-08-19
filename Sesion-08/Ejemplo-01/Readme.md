@@ -1,4 +1,4 @@
-## App responsible
+## App responsiva
 
 ### OBJETIVO
 - Material UI
@@ -15,7 +15,7 @@
 
 3. Instalamos Material UI con `npm install @material-ui/core` y cuando termine, la comenzamos con `npm start`.
 
-4. Esta librería nos permite implementar componentes reutilizables, y uno de estos componentes es `Grid`. Este nos ayuda a crear apps responsibles que se vean bien en todos los dispositivos (celular, tablet, etc.).
+4. Esta librería nos permite implementar componentes reutilizables, y uno de estos componentes es `Grid`. Este nos ayuda a crear apps responsivas que se vean bien en todos los dispositivos (celular, tablet, etc.).
 
 5. Importamos los componentes que vamos a necesitar de la librería.
 ```
