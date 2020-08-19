@@ -1,41 +1,43 @@
 import React from 'react';
-import Tareas from './Tareas';
-import Profes from './Profes';
-import Usuarios from './Usuarios';
+import Genero from './Genero';
 
 const App = () => {
-	const [mostrarTareas, setMostrarTareas] = React.useState(false);
-	const [mostrarProfes, setMostrarProfes] = React.useState(false);
-	const [mostrarUsuarios, setMostrarUsuarios] = React.useState(false);
+	const [genero, setGenero] = React.useState('');
 
-	const renderizarUsuarios = () => {
-		if (mostrarUsuarios) {
-			return <Usuarios />;
+	const cambiarGenero = (event) => setGenero(event.target.value);
+
+	const renderizarGenero = () => {
+		if (genero === 'nina') {
+			return <Genero color="pink" />
+		}
+		if (genero === 'nino') {
+			return <Genero color="blue" />
 		}
 	};
 
 	return (
 		<div className="margen">
-			<button onClick={() => setMostrarTareas(!mostrarTareas)}>
-				Tareas
-			</button>
+			<input
+				id="nina"
+				value="nina"
+				type="radio"
+				name="genero"
+				onClick={cambiarGenero}
+			/>
+			<label htmlFor="nina">Niña</label>
 			<br />
-			{mostrarTareas && <Tareas />}
+
+			<input
+				id="nino"
+				value="nino"
+				type="radio"
+				name="genero"
+				onClick={cambiarGenero}
+			/>
+			<label htmlFor="nino">Niño</label>
 			<br /><br />
 
-			<button onClick={() => setMostrarProfes(!mostrarProfes)}>
-				Profes
-			</button>
-			<br />
-			{mostrarProfes ? <Profes /> : ''}
-			<br /><br />
-
-			<button onClick={() => setMostrarUsuarios(!mostrarUsuarios)}>
-				Usuarios
-			</button>
-			<br />
-			{renderizarUsuarios()}
-			<br /><br />
+			{renderizarGenero()}
 		</div>
 	);
 };
