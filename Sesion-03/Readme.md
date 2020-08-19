@@ -1,4 +1,4 @@
-# Sesión 03: Estado (state) y Propiedades (props)
+# Sesión 03: Ciclo de vida, setState y eventos
 
 🎯 **Objetivos:**
 
