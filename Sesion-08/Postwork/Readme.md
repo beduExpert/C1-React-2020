@@ -16,3 +16,7 @@
 5. Puedes usar [useHistory](https://reactrouter.com/web/api/Hooks/usehistory) de `react-router-dom`.
 
 6. Resultado en https://friendly-archimedes-7ebe0d.netlify.app/
+
+7. En dado caso que el URL no funcione, clona el proyecto y correlo.
+
+8. Intentalo antes de rendirte por favor.
