@@ -30,10 +30,3 @@ Es recomendable que tengas los siguientes **conocimientos.**
 - [`Sesión 07 - Progressive web apps (PWA)`](Sesion-07)
 
 - [`Sesión 08 -  Material UI`](Sesion-08)
-
-```html
-<p>h1</p>
-<p>h1</p>
-<p>h1</p>
-<p>h1</p>
-```
