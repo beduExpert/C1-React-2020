@@ -18,11 +18,12 @@ Material UI es el framework de IU para React más popular del mundo...[`leer mas
 
 ## 🕵 Ejemplos:
 
-+ [`Ejemplo 01: ¡Wooow!`](Ejemplo-01)
++ [`Ejemplo 01: App responsiva`](Ejemplo-01)
++ [`Ejemplo 02: Forma`](Ejemplo-02)
 
 ## 💻 Retos:
-
-+ [`Reto 01: ¿Hamburguesas o qué?`](Reto-01)
++ [`Reto 01: Periódico`](Reto-01)
++ [`Reto 01: Periódico`](Reto-02)
 
 
 ## 🛡 Postwork
