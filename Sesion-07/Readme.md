@@ -39,4 +39,4 @@ PWA o Progressive web apps (aplicaciones web progresivas), es un término que se
 - [Pinterest](https://www.pinterest.com/)
 - [Google Maps](https://www.google.co.in/maps/)
 
-### [Configurar una PWA](../BuenasPracticas/PWA/Readme.md).
+### 🎩 [Configurar una PWA](../BuenasPracticas/PWA/Readme.md).
