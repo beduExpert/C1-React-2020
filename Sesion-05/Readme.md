@@ -40,4 +40,6 @@ Los Hooks son una **API** que nos permite usar estado y otras características e
 - Buenas prácticas.
 - 3 maneras de renderizado condicional.
 
-### [Buenas prácticas para `useEffect`](../BuenasPracticas/useEffect/Readme.md).
+
+
+### 🎩 [Buenas prácticas para `useEffect`](../BuenasPracticas/useEffect/Readme.md).
