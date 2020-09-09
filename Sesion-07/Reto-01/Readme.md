@@ -59,10 +59,8 @@
 
 8. Configurarla como PWA y publicarla en internet.
 
-9. Presumirla con los demás y que te valga mdr (madera) si no les gusta.
+9. Se pueden usar todas las [buenas prácticas](../../BuenasPracticas) que hemos visto.
 
-10. Se pueden usar todas las [buenas prácticas](../../BuenasPracticas) que hemos visto.
+10. Hay muchas otra validaciones que se pueden hacer, pero con las mencionadas es suficiente.
 
-11. Hay muchas otra validaciones que se pueden hacer, pero con las mencionadas es suficiente.
-
-12. En dado caso que no hayas completado el reto, ve, analiza, entiende y practica con el resultado que puedes encontrar en esta misma carpeta.
+11. En dado caso que no hayas completado el reto, ve, analiza, entiende y practica con el resultado que puedes encontrar en esta misma carpeta.
