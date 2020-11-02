@@ -25,9 +25,10 @@
 
 5. No olvides seguir las [buenas prácticas para las propiedades (props)](../../BuenasPracticas/PropTypes/Readme.md).
 
+6. Resultado:
+<img src="./public/resultado.gif">
+
+
 ## ❗Importante
 
 Si no pudiste resolver el reto, no te preocupes,😉 en la parte superior del repositorio encontrarás los archivos con la solución para tu consulta, pero recuerda lo importante es que **lo intentes primero.** 🤓
-
-6. Resultado:
-<img src="./public/resultado.gif">
