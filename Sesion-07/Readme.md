@@ -13,7 +13,7 @@
 
 + Conocer qué es una PWA.
 
-**¿Qué es una PWS?**
+**¿Qué es una PWA?**
 
 PWA o Progressive web apps (aplicaciones web progresivas), es un término que se da a una nueva generación de aplicaciones que incrementan su funcionalidad...[`leer mas`](Prework)
 
