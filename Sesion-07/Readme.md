@@ -32,7 +32,7 @@ PWA o Progressive web apps (aplicaciones web progresivas), es un término que se
 - PWA.
 - Como descargarla.
 
-#### EJEMPLOS
+#### EJEMPLOS DE PWS's
 - [Lodash](https://lodash.com/)
 - [Tinder](https://tinder.com/)
 - [Trivago](https://www.trivago.in/)
