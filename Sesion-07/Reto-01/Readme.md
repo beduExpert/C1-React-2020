@@ -64,3 +64,9 @@
 10. Hay muchas otra validaciones que se pueden hacer, pero con las mencionadas es suficiente.
 
 11. En dado caso que no hayas completado el reto, ve, analiza, entiende y practica con el resultado que puedes encontrar en esta misma carpeta.
+
+## ❗Importante
+
+Si no pudiste resolver el reto, no te preocupes,😉 en la parte superior del repositorio encontrarás los archivos con la solución para tu consulta, pero recuerda lo importante es que **tú lo intentes primero.** 🤓
+
+[`Atŕas`](https://github.com/beduExpert/C1-React-2020/tree/master/Sesion-07/Ejemplo-01)
