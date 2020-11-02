@@ -25,3 +25,7 @@
 
 
 [`Atrás`](../Ejemplo-01)
+
+### Importante
+
+Si no pudiste resolver el reto, no te preocupes,😉 en la parte superior del repositorio encontrarás los archivos con la solución para tu consulta, pero recuerda lo importante es que **tú lo intentes primero.** 🤓
