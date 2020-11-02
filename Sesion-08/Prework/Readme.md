@@ -26,9 +26,9 @@ Otras alternativas, aparte de Material UI con la cuales puedes trabajar son:
 
 + [Ant Design](https://ant.design/)
 + [React Bootstrap](https://react-bootstrap.github.io/)
-+ [blueprintjs](https://blueprintjs.com/)
++ [Blueprintjs](https://blueprintjs.com/)
 
-**En los siguientes ejemplos y retos, estaremos utilizando Material UI, por las siguientes razones:**
+**En los siguientes ejemplos y retos estaremos utilizando Material UI por las siguientes razones:**
 
 + Los componentes de Material-UI funcionan sin ninguna configuración adicional, y no ensucian el global scope, son autosuficientes y sólo inyectarán los estilos necesarios para su presentación. No dependen de ninguna hoja de estilos global como normalize.css.
 + La instalación de los archivos de Material-UI son a través de npm.
