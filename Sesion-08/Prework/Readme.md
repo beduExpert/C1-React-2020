@@ -32,4 +32,4 @@ Otras alternativas, aparte de Material UI con la cuales puedes trabajar son:
 
 + Los componentes de Material-UI funcionan sin ninguna configuración adicional, y no ensucian el global scope, son autosuficientes y sólo inyectarán los estilos necesarios para su presentación. No dependen de ninguna hoja de estilos global como normalize.css.
 + La instalación de los archivos de Material-UI son a través de npm.
-+ soporta la carga modular si se utiliza alguna herramienta de paquetización como webpack o browserify, por lo que únicamente se cargarán en la aplicación web los componentes que se utilicen realmente.
++ Soporta la carga modular si se utiliza alguna herramienta de paquetización como webpack o browserify, por lo que únicamente se cargarán en la aplicación web los componentes que se utilicen realmente.
