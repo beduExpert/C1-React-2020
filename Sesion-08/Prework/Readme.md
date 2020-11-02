@@ -5,8 +5,7 @@
 
 # ¿Qué es Material UI?
 
-![](https://miro.medium.com/max/480/1*7LOWVelUHYS1iqeX34Whzg.png)
-![](https://s3.amazonaws.com/creativetim_bucket/products/80/original/opt_mdp_react_thumbnail.jpg?1522160852)
+<img src="https://s3.amazonaws.com/creativetim_bucket/products/80/original/opt_mdp_react_thumbnail.jpg?1522160852" width="500">
 
 [**Material UI**](https://material-ui.com/) es actualmente el marco de interfaz de usuario más popular para React, y la biblioteca proporciona una gama de componentes listos para usar listos para usar. La biblioteca consta de componentes para diseño, navegación, entrada, comentarios y más. Material UI se basa en [**Material Design**](https://material.io/design/), un lenguaje de diseño que Google anticipó originalmente, pero que ahora es ampliamente adoptado en toda la comunidad de desarrolladores front-end.
 
