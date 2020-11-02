@@ -1,4 +1,4 @@
-[`React Fundamentals`](../../README.md) > [`Sesión 06: Rutas con react router dom`](../Readme.md) >[`Ejemplo-02`](../Ejemplo-02) > `Reto 1`
+[`React Fundamentals`](../../README.md) > [`Sesión 06: Rutas con react router dom`](../Readme.md) >[`Ejemplo-02`](../Ejemplo-02) > `Reto 2`
 
 ## Buscando a Memo
 
@@ -36,3 +36,8 @@
 9. Avisar cuando es Memo usando el `useEffect`.
 <img src="./public/5.gif">
 
+## ❗Importante
+
+Si no pudiste resolver el reto, no te preocupes,😉 en la parte superior del repositorio encontrarás los archivos con la solución para tu consulta, pero recuerda lo importante es que **tú lo intentes primero.** 🤓
+
+[`Atrás`](https://github.com/beduExpert/C1-React-2020/tree/master/Sesion-06/Ejemplo-02)
