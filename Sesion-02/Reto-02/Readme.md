@@ -22,4 +22,8 @@
 4. Resultado:
 <img src="./public/resultado.png" width="400">
 
+## ❗Importante
+
+Si no pudiste resolver el reto, no te preocupes,😉 en la parte superior del repositorio encontrarás los archivos con la solución para tu consulta, pero recuerda lo importante es que **lo intentes primero.** 🤓
+
 [`Atrás`](../Ejemplo-02)
