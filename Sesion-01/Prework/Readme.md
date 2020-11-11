@@ -245,11 +245,11 @@ class Navbar extends React.Component{
 
 >💡 **Nota:**
 >
->Recuerda que la documentación oficial va a ser tu mejor amiga, por eso al final de tu prework podras ver recursos de los temas vistos anteriormente.
+>Recuerda que la documentación oficial va a ser tu mejor amiga, por eso al final de tu prework podrás ver recursos de los temas vistos anteriormente.
 
 **Recursos:**
 
 1. [**¿Qué es React?**](https://es.reactjs.org/)
-2. [**Introduccion a JSX**](https://es.reactjs.org/docs/introducing-jsx.html).
+2. [**Introducción a JSX**](https://es.reactjs.org/docs/introducing-jsx.html).
 3. [**Renderizando elementos**](https://es.reactjs.org/docs/rendering-elements.html)
 4. [**Componentes y propiedades**](https://es.reactjs.org/docs/components-and-props.html)
