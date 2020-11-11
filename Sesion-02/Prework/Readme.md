@@ -105,5 +105,5 @@ Si tenemos que usar un evento que no está en este listado de eventos, lo tendr�
 
 1. [**Renderizado condicional**](https://es.reactjs.org/docs/conditional-rendering.html)
 2. [**Renderizado de elemento**](https://es.reactjs.org/docs/rendering-elements.html)
-3. Leer la seccion de [R**eact solo actualiza lo que es necesario**](https://es.reactjs.org/docs/rendering-elements.html#react-only-updates-whats-necessary), esto es porque el virtual DOM es tan rápido; sabe que y cuando cambiar componentes.
+3. Leer la sección de [R**eact solo actualiza lo que es necesario**](https://es.reactjs.org/docs/rendering-elements.html#react-only-updates-whats-necessary), esto es porque el virtual DOM es tan rápido; sabe que y cuando cambiar componentes.
 
