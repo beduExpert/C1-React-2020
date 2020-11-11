@@ -34,8 +34,6 @@ Y aunque estos parezcan problemas independientes, Dan Abramov explica que en rea
 
 [![](http://img.youtube.com/vi/dpw9EHDh2bM/0.jpg)](http://www.youtube.com/watch?v=dpw9EHDh2bM "https://miro.medium.com/max/3600/1*HSisLuifMO6KbLfPOKtLow.jpeg")
 
->Hi, my name is [Sergei](http://sviridovserg.com) I love delivering great product to the customer and help teams to grow! I'm using GitHub a lot. It is hard to embed Youtube video to GitHub markdown when you adding comment to pull request on GitHub or changing markdown files. So, I created this simple tool that converts Youtube video URI to the embeddable markup that can be simply copy-pasted to GitHub.
-
 Además del hook de **manejo de estado**, React tiene otros hooks entre los que **destacan**:
 
 + useEffect
